@@ -40,529 +40,469 @@ kseniiapetrova@MacBook-Air-Kseniia test3 % sed -i '' -e 's/test/fail/' 4.txt
 
 kseniiapetrova@MacBook-Air-Kseniia test3 % echo -e "test\n$(cat 4.txt)" > 4.txt
 
-kseniiapetrova@MacBook-Air-Kseniia test3 % ps aux
+kseniiapetrova@MacBook-Air-Kseniia Bash training % ps aux
 USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
-root               391   8.9  0.3 408269808  21120   ??  Ss    5:11PM   0:28.53 /usr/libexec/airportd
-_windowserver      362   4.1  1.6 410337552 134400   ??  Ss    5:11PM  21:44.34 /System/Library/PrivateFrameworks/SkyLight.framewor
-kseniiapetrova     611   3.0  0.2 408395200  19808   ??  S     5:11PM   0:01.23 /System/Library/CoreServices/WiFiAgent.app/Contents
-kseniiapetrova     933   1.4  2.9 1623764288 242000   ??  R     5:12PM   3:48.67 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     571   0.6  0.1 408169968   4480   ??  S     5:11PM   0:06.18 /usr/sbin/distnoted agent
-_distnote          345   0.5  0.0 408168944   3296   ??  Ss    5:11PM   0:03.29 /usr/sbin/distnoted daemon
-kseniiapetrova     587   0.5  0.8 409861520  67344   ??  S     5:11PM   0:17.53 /System/Library/CoreServices/ControlCenter.app/Cont
-kseniiapetrova    1031   0.4  0.8 1621707792  63744   ??  S     5:17PM   0:36.29 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-root               347   0.4  0.3 408279776  24624   ??  Ss    5:11PM   1:19.37 /usr/libexec/PerfPowerServices
-kseniiapetrova    3473   0.3  5.3 415366896 444192   ??  S     7:10PM   0:57.82 /Applications/Microsoft Outlook.app/Contents/MacOS/
-kseniiapetrova     925   0.3  1.9 1622406928 162032   ??  S     5:12PM   5:23.06 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     929   0.3  0.7 442003776  61104   ??  S     5:12PM   1:09.32 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-root               357   0.2  0.1 408266768  12112   ??  Ss    5:11PM   0:16.14 /usr/libexec/corebrightnessd --launchd
-root               354   0.2  0.4 408319792  29648   ??  Ss    5:11PM   0:42.10 /usr/sbin/bluetoothd
-kseniiapetrova     783   0.2  3.9 410712992 323216   ??  S     5:11PM   9:22.03 /Applications/Telegram.app/Contents/MacOS/Telegram
-kseniiapetrova    4239   0.2  3.5 514980944 296816   ??  Ss    7:35PM   0:07.12 /System/Library/Frameworks/WebKit.framework/Version
-root               447   0.1  0.1 408825872   4800   ??  Ss    5:11PM   0:11.00 /usr/libexec/audioclocksyncd
-kseniiapetrova    3487   0.0  0.1 412690640  11504   ??  Ss    7:10PM   0:00.05 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    3483   0.0  0.1 408496192   4848   ??  Ss    7:10PM   0:00.03 /System/Library/Frameworks/AudioToolbox.framework/X
-_spotlight        3472   0.0  0.1 408205120   8864   ??  S     7:10PM   0:04.71 /System/Library/Frameworks/CoreServices.framework/F
-_datadetectors    3470   0.0  0.0 408196592   2512   ??  Ss    7:09PM   0:00.06 /usr/libexec/DataDetectorsSourceAccess
-kseniiapetrova    3405   0.0  0.2 408233968  13456   ??  S     7:08PM   0:00.06 /System/Library/PrivateFrameworks/AMPLibrary.framew
-kseniiapetrova    3404   0.0  0.1 408096992   9216   ??  S     7:08PM   0:00.07 /System/Library/PrivateFrameworks/BookKit.framework
-kseniiapetrova    3403   0.0  0.1 408228624   9760   ??  S     7:08PM   0:00.09 /System/Library/PrivateFrameworks/PodcastServices.f
-kseniiapetrova    3402   0.0  0.3 408282832  24128   ??  S     7:08PM   0:00.94 /System/Library/PrivateFrameworks/AMPLibrary.framew
-kseniiapetrova    3401   0.0  0.2 408262512  13488   ??  Ss    7:08PM   0:00.08 /System/Library/PrivateFrameworks/AssistantServices
-kseniiapetrova    3397   0.0  0.1 408197200   5808   ??  S     7:07PM   0:00.06 /usr/libexec/proactived
-kseniiapetrova    3396   0.0  0.2 408244336  18752   ??  S     7:07PM   0:00.77 /usr/libexec/remindd
-kseniiapetrova    3391   0.0  0.1 408226992   6672   ??  S     7:07PM   0:00.04 /System/Library/PrivateFrameworks/GeoServices.frame
-kseniiapetrova    3390   0.0  0.1 408198208  12080   ??  S     7:07PM   0:00.09 /System/Library/PrivateFrameworks/CommerceKit.frame
-root              3383   0.0  0.0 408075312   2736   ??  Ss    7:07PM   0:00.04 /System/Library/PrivateFrameworks/CacheDelete.frame
-root              3384   0.0  0.1 408227840  10768   ??  Ss    7:07PM   0:00.17 /System/Library/PrivateFrameworks/CloudKitDaemon.fr
-root              3387   0.0  0.1 408228368   5392   ??  Ss    7:07PM   0:00.03 /usr/bin/sysdiagnose
-root              3382   0.0  0.1 408095840   4480   ??  Ss    7:07PM   0:00.03 /usr/libexec/microstackshot
-kseniiapetrova    3361   0.0  0.1 408685760   5344   ??  Ss    7:06PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-kseniiapetrova    3351   0.0  0.1 408656176   9392   ??  Ss    7:06PM   0:00.07 /System/Library/PrivateFrameworks/RemoteManagement.
-kseniiapetrova    3346   0.0  0.1 408655984   4432   ??  Ss    7:06PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-kseniiapetrova    3336   0.0  0.1 408655984   4432   ??  Ss    7:06PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-kseniiapetrova    3316   0.0  0.1 408655984   4448   ??  Ss    7:06PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-kseniiapetrova    3300   0.0  0.1 408230736   6672   ??  S     7:06PM   0:00.11 /System/Library/PrivateFrameworks/RemoteManagement.
-root              3299   0.0  0.0 408048672    448   ??  SNs   7:06PM   0:00.01 /usr/libexec/periodic-wrapper daily
-_gamecontrollerd  3278   0.0  0.1 409080352   4368   ??  S     7:06PM   0:00.08 /System/Library/PrivateFrameworks/GameControllerFou
-root              3277   0.0  0.0 408049696    432   ??  SNs   7:06PM   0:00.01 /usr/libexec/periodic-wrapper weekly
-root              3263   0.0  0.1 408066096   4992   ??  Ss    7:06PM   0:00.04 /System/Library/PrivateFrameworks/PackageKit.framew
-root              3262   0.0  0.1 408227920   9184   ??  Ss    7:06PM   0:00.44 /System/Library/PrivateFrameworks/PackageKit.framew
-_assetcache       3258   0.0  0.1 408233664   7968   ??  Ss    7:06PM   0:00.12 /System/Library/PrivateFrameworks/AssetCacheService
-root              3252   0.0  0.0 408196592   2064   ??  Ss    7:06PM   0:00.07 /System/Library/PrivateFrameworks/Noticeboard.frame
-kseniiapetrova    3250   0.0  0.2 408232800  14064   ??  S     7:06PM   0:00.24 /usr/libexec/appleaccountd
-kseniiapetrova    3249   0.0  0.1 408096000   5296   ??  S     7:06PM   0:00.03 /System/Library/PrivateFrameworks/IntlPreferences.f
-kseniiapetrova    3246   0.0  0.2 408197296  14896   ??  S     7:06PM   0:00.08 /System/Library/CoreServices/Setup Assistant.app/Co
-kseniiapetrova    3247   0.0  0.2 412796848  19328   ??  S     7:06PM   0:00.33 /System/Library/PrivateFrameworks/Noticeboard.frame
-kseniiapetrova    3226   0.0  0.1 408236656   9616   ??  S     7:05PM   0:00.09 /usr/libexec/mlruntimed
-kseniiapetrova    3225   0.0  0.1 408247008   9792   ??  S     7:05PM   0:00.16 /System/Library/PrivateFrameworks/SiriTTSService.fr
-root              3224   0.0  0.1 408231936   6976   ??  Ss    7:05PM   0:00.15 /usr/libexec/dprivacyd
-root              3219   0.0  0.1 408066128   7152   ??  Ss    7:05PM   0:00.03 /System/Library/CoreServices/Applications/Feedback 
-kseniiapetrova    3217   0.0  0.1 408851760   6848   ??  S     7:05PM   0:00.06 /usr/libexec/betaenrollmentd
-kseniiapetrova    3214   0.0  0.1 408104000  10384   ??  S     7:05PM   0:00.04 /usr/libexec/backgroundassets.user
-root              3213   0.0  0.1 408228528   6704   ??  Ss    7:05PM   0:00.07 /usr/libexec/ASPCarryLog
-kseniiapetrova    3212   0.0  0.2 408239216  17744   ??  S     7:05PM   0:00.37 /usr/libexec/tipsd
-kseniiapetrova    3211   0.0  0.2 408229280  14320   ??  S     7:05PM   0:00.35 /System/Library/PrivateFrameworks/IntelligencePlatf
-kseniiapetrova    3106   0.0  0.4 497113104  33392   ??  Ss    6:58PM   0:00.11 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    3105   0.0  0.5 497431504  38592   ??  Ss    6:58PM   0:00.17 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    3104   0.0  0.0 408819008   3296   ??  Ss    6:58PM   0:00.04 /System/Library/Frameworks/Metal.framework/Versions
-kseniiapetrova    3103   0.0  2.5 515660144 208160   ??  Ss    6:58PM   0:57.70 /System/Library/Frameworks/WebKit.framework/Version
-root              3027   0.0  0.1 408065696   6640   ??  Ss    6:53PM   0:00.02 /usr/libexec/griddatad
-_fpsd             3024   0.0  0.2 408224528  13968   ??  Ss    6:53PM   0:00.20 /System/Library/PrivateFrameworks/CoreFP.framework/
-kseniiapetrova    3021   0.0  0.2 408242624  14608   ??  S     6:53PM   0:00.31 cloudphotod
-kseniiapetrova    3014   0.0  0.4 408277888  32512   ??  S     6:53PM   0:07.62 /System/Library/PrivateFrameworks/PhotoAnalysis.fra
-kseniiapetrova    3010   0.0  0.2 408271120  19136   ??  S     6:53PM   0:02.04 /System/Library/PrivateFrameworks/PhotoLibraryServi
-root              3008   0.0  0.0 408524464   2288   ??  Ss    6:53PM   0:00.03 /Library/Apple/System/Library/CoreServices/XProtect
-root              3005   0.0  0.1 408227968   8240   ??  Ss    6:53PM   0:00.05 /usr/libexec/ospredictiond
-kseniiapetrova    2999   0.0  0.4 408405072  35104   ??  Ss    6:43PM   0:00.28 /System/Applications/Stocks.app/Contents/PlugIns/St
-kseniiapetrova    2997   0.0  0.3 408339632  22544   ??  S     6:43PM   0:00.42 /System/Library/CoreServices/PowerChime.app/Content
-kseniiapetrova    2995   0.0  0.2 408744272  14432   ??  S     6:42PM   0:00.12 /System/Library/Frameworks/LocalAuthentication.fram
-kseniiapetrova    2839   0.0  0.0 408927648   1392   ??  Ss    6:31PM   0:00.08 /System/Library/Frameworks/Metal.framework/Versions
-kseniiapetrova    2838   0.0  0.0 409089344   3264   ??  Ss    6:31PM   0:00.20 /System/Library/Frameworks/Metal.framework/Versions
-kseniiapetrova    2825   0.0  1.7 514605056 141584   ??  Ss    6:31PM   0:36.62 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    2760   0.0  0.0 408056960   1728   ??  Ss    6:28PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions
-kseniiapetrova    2759   0.0  0.4 408289520  34208   ??  S     6:28PM   0:06.51 /usr/libexec/sharingd
-kseniiapetrova    2481   0.0  0.2 408314848  20480   ??  S     6:16PM   0:00.28 /System/Library/PrivateFrameworks/PaperKit.framewor
-kseniiapetrova    2449   0.0  0.0 408086608   2976   ??  S     6:15PM   0:00.02 /usr/libexec/spindump_agent
-kseniiapetrova    1583   0.0  0.2 408745200  19152   ??  Ss    5:43PM   0:00.21 /System/Library/Frameworks/QuickLookUI.framework/Ve
-kseniiapetrova    1582   0.0  0.5 408918064  45936   ??  Ss    5:43PM   0:00.71 /System/Library/Frameworks/AppKit.framework/Version
-kseniiapetrova    1579   0.0  0.6 409856064  49408   ??  S     5:43PM   0:03.10 /System/Applications/TextEdit.app/Contents/MacOS/Te
-kseniiapetrova    1292   0.0  0.0 408199232   3520   ??  Ss    5:28PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova    1291   0.0  0.5 413648912  39920   ??  Ss    5:28PM   0:27.02 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    1281   0.0  0.2 408960928  14944   ??  Ss    5:28PM   0:00.37 /System/Library/PrivateFrameworks/SafariShared.fram
-kseniiapetrova    1076   0.0  0.1 408228576   4928   ??  S     5:19PM   0:00.18 /System/Library/CoreServices/ScopedBookmarkAgent
-kseniiapetrova    1070   0.0  0.2 408224208  13264   ??  S     5:17PM   0:00.39 /usr/libexec/promotedcontentd
-root              1069   0.0  0.1 408197760   4352   ??  Ss    5:17PM   0:00.05 /System/Library/PrivateFrameworks/AppStoreDaemon.fr
-_installcoordinationd  1068   0.0  0.1 408197376   5136   ??  Ss    5:17PM   0:00.06 /System/Library/PrivateFrameworks/InstallCoordinati
-kseniiapetrova    1067   0.0  0.3 408277616  27312   ??  S     5:17PM   0:02.20 /System/Library/PrivateFrameworks/AppStoreDaemon.fr
-kseniiapetrova    1058   0.0  0.2 408226592  15424   ??  S     5:17PM   0:00.08 /System/Library/CoreServices/EscrowSecurityAlert.ap
-root              1026   0.0  0.0 408685984   3504   ??  Ss    5:16PM   0:00.02 /usr/libexec/memoryanalyticsd -xlatS
-root               998   0.0  0.1 408227264   9072   ??  Ss    5:14PM   0:00.19 /System/Library/CoreServices/SubmitDiagInfo server-
-root               997   0.0  0.2 408269344  19472   ??  Ss    5:14PM   0:05.25 /usr/sbin/spindump
-kseniiapetrova     995   0.0  0.2 408285408  12592   ??  S     5:14PM   0:00.23 /System/Library/Frameworks/ApplicationServices.fram
-kseniiapetrova     993   0.0  0.2 408304144  13440   ??  S     5:14PM   0:01.63 /usr/libexec/naturallanguaged
-kseniiapetrova     991   0.0  0.2 408249776  12736   ??  S     5:14PM   0:00.15 /usr/libexec/keyboardservicesd
-kseniiapetrova     989   0.0  0.5 409005552  37904   ??  S     5:14PM   0:01.25 /System/Library/Services/AppleSpell.service/Content
-root               984   0.0  0.0 408207424   3520   ??  Ss    5:14PM   0:00.04 /System/Library/Frameworks/AudioToolbox.framework/X
-_rmd               981   0.0  0.1 408677552   5200   ??  Ss    5:13PM   0:00.06 /System/Library/PrivateFrameworks/RemoteManagement.
-_rmd               980   0.0  0.1 408656176   8416   ??  Ss    5:13PM   0:00.07 /System/Library/PrivateFrameworks/RemoteManagement.
-_rmd               979   0.0  0.1 408655984   4416   ??  Ss    5:13PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-_rmd               978   0.0  0.1 408655984   4416   ??  Ss    5:13PM   0:00.06 /System/Library/PrivateFrameworks/RemoteManagement.
-_rmd               977   0.0  0.0 408168944   1744   ??  S     5:13PM   0:00.21 /usr/sbin/distnoted agent
-_rmd               976   0.0  0.1 408787056   4432   ??  Ss    5:13PM   0:00.05 /System/Library/PrivateFrameworks/RemoteManagement.
-_rmd               975   0.0  0.1 408229600   6528   ??  Ss    5:13PM   0:00.15 /System/Library/PrivateFrameworks/RemoteManagement.
-root               974   0.0  0.1 408066192   4368   ??  Ss    5:13PM   0:00.03 /usr/libexec/tzd
-kseniiapetrova     973   0.0  0.1 408205456   7968   ??  S     5:13PM   0:00.45 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova     969   0.0  0.0 408076352   2592   ??  S     5:13PM   0:00.02 /System/Library/Frameworks/CoreServices.framework/V
-kseniiapetrova     938   0.0  0.7 1621736240  57856   ??  S     5:12PM   0:04.64 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     937   0.0  0.5 1621754304  40064   ??  S     5:12PM   0:03.50 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     936   0.0  0.7 1621743728  54960   ??  S     5:12PM   0:04.37 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     931   0.0  0.1 408227712   8400   ??  S     5:12PM   0:00.20 /usr/libexec/MTLAssetUpgraderD
-kseniiapetrova     930   0.0  0.3 441883008  26960   ??  S     5:12PM   0:02.02 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr8000
-kseniiapetrova     928   0.0  0.1 441604432   4208   ??  S     5:12PM   0:00.02 /var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/Ap
-root               926   0.0  0.0 408066144   2288   ??  Ss    5:12PM   0:00.02 /usr/libexec/online-authd
-kseniiapetrova     924   0.0  0.0 408093824   1696   ??  Ss    5:12PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions
-root               922   0.0  0.1 408226624   7504   ??  Ss    5:12PM   0:00.07 /System/Library/CoreServices/osanalyticshelper serv
-kseniiapetrova     921   0.0  0.2 408931504  17296   ??  Ss    5:12PM   0:00.23 /System/Library/Frameworks/QuickLook.framework/Vers
-kseniiapetrova     919   0.0  0.0 408197152   3712   ??  S     5:12PM   0:00.06 /usr/libexec/USBAgent
-kseniiapetrova     918   0.0  0.3 408789872  29152   ??  S     5:12PM   0:04.44 /System/Library/Frameworks/CoreSpotlight.framework/
-kseniiapetrova     917   0.0  0.1 408228944   6480   ??  S     5:12PM   0:00.29 /usr/libexec/proactiveeventtrackerd
-_spotlight         895   0.0  0.0 408196576   2016   ??  S     5:12PM   0:00.05 /usr/libexec/containermanagerd --runmode=agent --us
-_spotlight         894   0.0  0.1 408237088  11600   ??  SN    5:12PM   0:02.90 /System/Library/Frameworks/CoreServices.framework/F
-_spotlight         893   0.0  0.1 408234128   8944   ??  S     5:12PM   0:00.77 /usr/libexec/trustd --agent
-kseniiapetrova     889   0.0  0.3 408245696  25280   ??  S     5:12PM   0:02.95 /System/Library/PrivateFrameworks/DataAccess.framew
-kseniiapetrova     888   0.0  0.2 412721104  14032   ??  S     5:12PM   0:00.15 /System/Library/PrivateFrameworks/CoreSuggestions.f
-kseniiapetrova     886   0.0  0.1 408264224   8448   ??  S     5:12PM   0:00.27 /System/Library/PrivateFrameworks/Synapse.framework
-kseniiapetrova     884   0.0  0.1 408302288   8864   ??  S     5:12PM   0:00.30 /System/Library/PrivateFrameworks/SafariSafeBrowsin
-kseniiapetrova     883   0.0  0.2 408744176  19152   ??  Ss    5:12PM   0:00.22 /System/Library/Frameworks/QuickLookUI.framework/Ve
-kseniiapetrova     882   0.0  0.5 408925456  39376   ??  Ss    5:12PM   0:00.78 /System/Library/Frameworks/AppKit.framework/Version
-kseniiapetrova     881   0.0  0.8 515005376  68128   ??  Ss    5:11PM   0:35.84 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova     877   0.0  0.1 408231536  10688   ??  S     5:11PM   0:00.16 /System/Cryptexes/App/usr/libexec/PasswordBreachAge
-kseniiapetrova     880   0.0  0.1 408393488   6864   ??  S     5:11PM   0:00.06 /System/Cryptexes/App/usr/libexec/webpushd --machSe
-kseniiapetrova     879   0.0  0.3 408744928  23808   ??  Ss    5:11PM   0:00.24 /System/Volumes/Preboot/Cryptexes/App/System/Applic
-kseniiapetrova     878   0.0  0.1 408370368   5536   ??  Ss    5:11PM   0:00.13 /System/Library/Frameworks/ImageIO.framework/Versio
-kseniiapetrova     876   0.0  0.3 408297440  21376   ??  S     5:11PM   0:01.61 /System/Library/PrivateFrameworks/Translation.frame
-kseniiapetrova     875   0.0  0.0 408356928   3520   ??  Ss    5:11PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova     874   0.0  0.6 413823392  51856   ??  Ss    5:11PM   0:36.29 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova     873   0.0  0.3 408276976  21328   ??  S     5:11PM   0:00.56 /System/Library/PrivateFrameworks/PassKitCore.frame
-root               872   0.0  0.0 408216656   1456   ??  Ss    5:11PM   0:00.04 /System/Library/Frameworks/OpenGL.framework/Version
-kseniiapetrova     870   0.0  1.9 414858480 158448   ??  S     5:11PM   2:32.09 /System/Volumes/Preboot/Cryptexes/App/System/Applic
-kseniiapetrova     869   0.0  0.0 408196624   3040   ??  S     5:11PM   0:00.05 /System/Library/PrivateFrameworks/DeviceCheckIntern
-kseniiapetrova     862   0.0  0.1 408259088   6576   ??  S     5:11PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova     860   0.0  0.3 409846336  25056   ??  S     5:11PM   0:01.23 /System/Cryptexes/App/usr/libexec/com.apple.Safari.
-kseniiapetrova     858   0.0  0.2 408251264  19408   ??  S     5:11PM   0:00.86 /usr/libexec/searchpartyuseragent
-_softwareupdate    857   0.0  0.0 408523984   1536   ??  S     5:11PM   0:00.01 /System/Library/PrivateFrameworks/Install.framework
-kseniiapetrova     845   0.0  0.2 408236720  16240   ??  S     5:11PM   0:00.09 /System/Cryptexes/App/usr/libexec/SafariLaunchAgent
-kseniiapetrova     844   0.0  0.2 408140976  17200   ??  Ss    5:11PM   0:00.04 /System/Applications/Messages.app/Contents/Extensio
-kseniiapetrova     843   0.0  0.2 408272032  14000   ??  Ss    5:11PM   0:00.05 /System/Applications/Mail.app/Contents/Extensions/M
-kseniiapetrova     842   0.0  0.3 408429616  24352   ??  S     5:11PM   0:01.20 /System/Cryptexes/App/System/Library/CoreServices/S
-kseniiapetrova     841   0.0  0.1 408272256   9600   ??  Ss    5:11PM   0:00.06 /System/Volumes/Preboot/Cryptexes/App/System/Applic
-kseniiapetrova     840   0.0  0.1 408132768  11168   ??  Ss    5:11PM   0:00.06 /System/Applications/Calendar.app/Contents/Extensio
-kseniiapetrova     839   0.0  0.1 408197360  11184   ??  Ss    5:11PM   0:00.09 /System/Library/PrivateFrameworks/IDSBlastDoorSuppo
-kseniiapetrova     838   0.0  0.1 408206944   4368   ??  Ss    5:11PM   0:00.04 /System/Library/Frameworks/ExtensionFoundation.fram
-kseniiapetrova     836   0.0  0.2 408243904  14384   ??  S     5:11PM   0:00.29 /usr/libexec/adprivacyd
-kseniiapetrova     831   0.0  0.0 408234048   3184   ??  S     5:11PM   0:00.04 /System/Library/Frameworks/MediaAccessibility.frame
-kseniiapetrova     829   0.0  0.4 412908752  31648   ??  Ss    5:11PM   0:01.37 /System/Library/PrivateFrameworks/UIFoundation.fram
-_softwareupdate    826   0.0  0.0 408197152   1776   ??  S     5:11PM   0:00.05 /usr/sbin/cfprefsd agent
-_softwareupdate    825   0.0  0.0 408207424   2080   ??  S     5:11PM   0:00.04 /System/Library/Frameworks/MediaAccessibility.frame
-_softwareupdate    823   0.0  0.3 412878592  27232   ??  Ss    5:11PM   0:01.15 /System/Library/PrivateFrameworks/UIFoundation.fram
-kseniiapetrova     815   0.0  0.1 409118240   5712   ??  Ss    5:11PM   0:00.26 /System/Library/Frameworks/VideoToolbox.framework/V
-root               814   0.0  0.0 408196608   2768   ??  Ss    5:11PM   0:00.02 /System/Library/CoreServices/CrashReporterSupportHe
-kseniiapetrova     799   0.0  0.1 408243136  10672   ??  Ss    5:11PM   0:00.25 /System/Library/PrivateFrameworks/Categories.framew
-root               811   0.0  0.1 408232464   8656   ??  Ss    5:11PM   0:00.11 /System/Library/PrivateFrameworks/CoreAccessories.f
-root               810   0.0  0.1 408857184   6224   ??  Ss    5:11PM   0:00.15 /private/var/db/com.apple.xpc.roleaccountd.staging/
-kseniiapetrova     809   0.0  0.1 408095696   8720   ??  S     5:11PM   0:00.07 /usr/sbin/BTLEServerAgent
-_softwareupdate    806   0.0  0.1 408232512   9104   ??  Ss    5:11PM   0:00.20 /usr/libexec/NRDUpdated
-kseniiapetrova     805   0.0  0.0 408065520   2320   ??  S     5:11PM   0:00.02 /System/Library/PrivateFrameworks/IASUtilities.fram
-kseniiapetrova     803   0.0  0.1 408229936   9136   ??  S     5:11PM   0:00.12 /usr/libexec/diagnosticextensionsd
-root               801   0.0  0.1 408066928  10768   ??  Ss    5:11PM   0:00.09 /System/Library/PrivateFrameworks/SiriInference.fra
-kseniiapetrova     800   0.0  0.2 408281888  17488   ??  S     5:11PM   0:00.71 /System/Library/Frameworks/StoreKit.framework/Suppo
-root               798   0.0  0.1 408236112   4528   ??  Ss    5:11PM   0:00.07 /System/Library/Frameworks/CoreMediaIO.framework/Re
-root               795   0.0  0.1 408264560   8800   ??  Ss    5:11PM   0:01.60 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova     794   0.0  0.1 408534816   8224   ??  S     5:11PM   0:00.13 /usr/libexec/SidecarRelay
-kseniiapetrova     793   0.0  0.2 408244816  13840   ??  S     5:11PM   0:00.53 /System/Library/PrivateFrameworks/FinanceKit.framew
-kseniiapetrova     792   0.0  0.0 408198208   3520   ??  Ss    5:11PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova     789   0.0  0.0 408066128   2208   ??  Ss    5:11PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova     790   0.0  0.3 408415024  22512   ??  S     5:11PM   0:01.58 /System/Library/PrivateFrameworks/SoftwareUpdate.fr
-kseniiapetrova     788   0.0  0.1 408228016   7888   ??  S     5:11PM   0:00.09 /System/Library/PrivateFrameworks/WeatherDaemon.fra
-kseniiapetrova     787   0.0  0.1 408227936   5056   ??  S     5:11PM   0:00.65 /Library/Apple/System/Library/CoreServices/XProtect
-kseniiapetrova     786   0.0  0.2 408237424  14064   ??  SN    5:11PM   0:03.44 /System/Library/Frameworks/CoreServices.framework/F
-root               785   0.0  0.1 408097200   5632   ??  S     5:11PM   0:00.16 /usr/sbin/systemstats --logger-helper /private/var/
-root               784   0.0  0.0 408065760   2864   ??  Ss    5:11PM   0:01.36 /usr/libexec/sysmond
-_driverkit         782   0.0  0.0 408498944    832   ??  Ss    5:11PM   0:00.01 /System/Library/DriverExtensions/IOUserBluetoothSer
-kseniiapetrova     691   0.0  0.2 408230512  13936   ??  S     5:11PM   0:00.43 /System/Library/CoreServices/diagnostics_agent
-kseniiapetrova     743   0.0  0.1 408227568  11504   ??  S     5:11PM   0:01.04 /System/Library/PrivateFrameworks/UsageTracking.fra
-kseniiapetrova     678   0.0  0.1 408239312  12288   ??  S     5:11PM   0:02.25 /System/Library/PrivateFrameworks/AXAssetLoader.fra
-kseniiapetrova     762   0.0  0.2 408235232  12688   ??  Ss    5:11PM   0:00.35 /System/Library/PrivateFrameworks/iCloudDriveServic
-kseniiapetrova     780   0.0  0.1 408197200   5936   ??  S     5:11PM   0:00.41 /usr/libexec/gamecontrolleragentd
-root               778   0.0  0.1 408228560   5264   ??  Ss    5:11PM   0:02.40 /Library/Apple/System/Library/CoreServices/XProtect
-root               777   0.0  0.1 408231680   7824   ??  Ss    5:11PM   0:00.16 /usr/libexec/symptomsd-diag
-_accessoryupdater   772   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.20 /usr/sbin/distnoted agent
-root               770   0.0  0.0 408076320   2256   ??  Ss    5:11PM   0:00.01 /System/Library/Frameworks/ColorSync.framework/Vers
-root               769   0.0  0.1 408265456   7888   ??  Ss    5:11PM   0:11.55 /System/Library/PrivateFrameworks/AmbientDisplay.fr
-kseniiapetrova     768   0.0  0.1 408372496  12576   ??  S     5:11PM   0:00.15 /System/Library/PrivateFrameworks/ContextKit.framew
-_applepay          767   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.21 /usr/sbin/distnoted agent
-kseniiapetrova     765   0.0  0.2 408271040  19376   ??  S     5:11PM   0:02.92 /System/Library/PrivateFrameworks/ContactsDonation.
-kseniiapetrova     766   0.0  0.1 408233024   9040   ??  S     5:11PM   0:00.26 /System/Library/Frameworks/ClassKit.framework/Versi
-_gamecontrollerd   763   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.21 /usr/sbin/distnoted agent
-root               760   0.0  0.1 408235072   8320   ??  Ss    5:11PM   0:00.20 /System/Library/PrivateFrameworks/AuthKit.framework
-kseniiapetrova     753   0.0  0.2 408274256  14528   ??  S     5:11PM   0:06.16 /usr/libexec/biomesyncd
-kseniiapetrova     752   0.0  0.3 408280672  24368   ??  S     5:11PM   2:42.29 /System/Library/CoreServices/UniversalControl.app/C
-_applepay          751   0.0  0.1 408261776   8304   ??  Ss    5:11PM   0:00.60 /usr/libexec/nfcd
-_assetcache        750   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.20 /usr/sbin/distnoted agent
-root               749   0.0  0.1 408232160   4528   ??  Ss    5:11PM   0:00.07 /System/Library/PrivateFrameworks/AssetCacheService
-root               748   0.0  0.1 408235776   9776   ??  Ss    5:11PM   0:01.20 /usr/libexec/rtcreportingd
-kseniiapetrova     690   0.0  0.3 408275744  25536   ??  S     5:11PM   0:01.35 /System/Library/CoreServices/cloudpaird
-kseniiapetrova     685   0.0  0.2 408232928  13344   ??  S     5:11PM   0:00.37 /System/Library/PrivateFrameworks/AskPermission.fra
-kseniiapetrova     747   0.0  0.1 408132416   8960   ??  S     5:11PM   0:00.25 /System/Library/PrivateFrameworks/CommunicationsFil
-kseniiapetrova     604   0.0  0.3 408286640  26864   ??  S     5:11PM   0:16.78 /System/Library/PrivateFrameworks/CoreDuetContext.f
-kseniiapetrova     581   0.0  0.1 408236080  12352   ??  S     5:11PM   0:00.48 /System/Library/PrivateFrameworks/CloudServices.fra
-_gamecontrollerd   576   0.0  0.1 408264000   8960   ??  Ss    5:11PM   0:00.76 /usr/libexec/gamecontrollerd
-_applepay          577   0.0  0.1 408226688   6272   ??  Ss    5:11PM   0:00.09 /usr/libexec/seld
-kseniiapetrova     746   0.0  0.1 408096496   4592   ??  S     5:11PM   0:00.02 /System/Library/PrivateFrameworks/NewDeviceOutreach
-kseniiapetrova     745   0.0  0.2 408265584  14928   ??  S     5:11PM   0:00.20 /System/Library/PrivateFrameworks/EmailDaemon.frame
-_assetcache        742   0.0  0.1 408249232   6432   ??  Ss    5:11PM   0:00.07 /usr/libexec/AssetCache/AssetCache
-kseniiapetrova     741   0.0  0.1 408267984   8448   ??  S     5:11PM   0:00.15 /System/Library/PrivateFrameworks/AssetCacheService
-kseniiapetrova     740   0.0  0.2 408269440  12976   ??  S     5:11PM   0:00.14 /System/Library/CoreServices/mapspushd
-kseniiapetrova     739   0.0  0.3 409652240  28384   ??  S     5:11PM   0:00.26 /System/Library/CoreServices/UIKitSystem.app/Conten
-kseniiapetrova     737   0.0  0.6 408436272  50320   ??  Ss    5:11PM   0:01.15 /System/Applications/Weather.app/Contents/PlugIns/W
-kseniiapetrova     736   0.0  0.7 408335968  59168   ??  Ss    5:11PM   0:01.94 /System/Library/CoreServices/Screen Time.app/Conten
-kseniiapetrova     735   0.0  0.2 408309424  19808   ??  Ss    5:11PM   0:00.54 /System/Applications/Calendar.app/Contents/PlugIns/
-kseniiapetrova     734   0.0  0.3 408310032  26032   ??  Ss    5:11PM   0:01.98 /System/Applications/Clock.app/Contents/PlugIns/Wor
-kseniiapetrova     733   0.0  0.1 408271600  11968   ??  S     5:11PM   0:00.19 /usr/libexec/neagent
-kseniiapetrova     732   0.0  0.0 408057360   3024   ??  S     5:11PM   0:00.01 /System/Library/Frameworks/ColorSync.framework/Supp
-kseniiapetrova     731   0.0  0.1 408235264   9680   ??  S     5:11PM   0:00.08 /usr/libexec/seserviced
-kseniiapetrova     730   0.0  0.1 408233856   7072   ??  S     5:11PM   0:00.06 /System/Library/Frameworks/Security.framework/Versi
-kseniiapetrova     728   0.0  0.3 408285376  22144   ??  S     5:11PM   0:00.18 /System/Library/CoreServices/Keychain Circle Notifi
-kseniiapetrova     727   0.0  0.1 408264784   9088   ??  S     5:11PM   0:00.12 /System/Library/PrivateFrameworks/ProtectedCloudSto
-kseniiapetrova     726   0.0  0.2 408274288  16160   ??  S     5:11PM   0:00.30 /usr/libexec/fmfd
-root               725   0.0  0.1 408264096   9120   ??  Ss    5:11PM   0:00.12 /usr/libexec/wifivelocityd
-kseniiapetrova     724   0.0  0.1 408263472   8016   ??  S     5:11PM   0:00.17 /System/Library/PrivateFrameworks/CoreCDP.framework
-kseniiapetrova     723   0.0  0.1 408225360   4832   ??  S     5:11PM   0:00.04 /usr/libexec/WiFiVelocityAgent
-kseniiapetrova     722   0.0  0.2 409118720  17776   ??  S     5:11PM   0:00.55 /usr/libexec/avconferenced
-root               721   0.0  0.1 409116544   9600   ??  Ss    5:11PM   0:00.15 /System/Library/PrivateFrameworks/XprotectFramework
-kseniiapetrova     720   0.0  0.2 412734656  18768   ??  S     5:11PM   0:03.86 /System/Library/PrivateFrameworks/AppleMediaService
-kseniiapetrova     695   0.0  0.2 408271168  15920   ??  S     5:11PM   0:00.84 /System/Library/PrivateFrameworks/AppleMediaService
-kseniiapetrova     718   0.0  0.2 408274640  19232   ??  S     5:11PM   0:00.48 /System/Library/PrivateFrameworks/CommerceKit.frame
-kseniiapetrova     717   0.0  0.3 408273104  26064   ??  S     5:11PM   0:41.50 /System/Library/Frameworks/Contacts.framework/Suppo
-kseniiapetrova     719   0.0  0.2 408664256  13008   ??  S     5:11PM   0:00.17 /System/Library/Frameworks/Security.framework/Versi
-kseniiapetrova     716   0.0  0.1 408102384   4768   ??  S     5:11PM   0:00.06 /System/Library/PrivateFrameworks/MediaRemote.frame
-kseniiapetrova     714   0.0  0.5 408311056  42432   ??  S     5:11PM   0:01.16 /System/Library/PrivateFrameworks/iTunesCloud.frame
-kseniiapetrova     713   0.0  0.1 408527680  10960   ??  Ss    5:11PM   0:00.26 /System/Library/PrivateFrameworks/CoreEmbeddedSpeec
-kseniiapetrova     710   0.0  0.2 408278864  14000   ??  S     5:11PM   0:00.80 /System/Library/PrivateFrameworks/GeoServices.frame
-kseniiapetrova     712   0.0  0.2 408277328  14704   ??  S     5:11PM   0:00.39 /System/Library/PrivateFrameworks/StatusKit.framewo
-kseniiapetrova     711   0.0  0.1 408265776  11008   ??  S     5:11PM   0:06.63 /usr/libexec/triald
-kseniiapetrova     709   0.0  0.3 408279344  24048   ??  S     5:11PM   0:01.28 /System/Library/PrivateFrameworks/IMDPersistence.fr
-kseniiapetrova     708   0.0  0.1 408661216   8448   ??  Ss    5:11PM   0:00.07 /System/Library/PrivateFrameworks/TelephonyUtilitie
-kseniiapetrova     706   0.0  0.1 408233616   5040   ??  S     5:11PM   0:00.04 /System/Library/Frameworks/CryptoTokenKit.framework
-kseniiapetrova     705   0.0  0.2 408295136  13856   ??  Ss    5:11PM   0:01.11 /System/Library/Input Methods/PressAndHold.app/Cont
-kseniiapetrova     704   0.0  0.2 408271968  18496   ??  S     5:11PM   0:00.45 /System/Library/PrivateFrameworks/CoreParsec.framew
-kseniiapetrova     703   0.0  0.1 408262832   9680   ??  Ss    5:11PM   0:00.03 /System/Applications/Home.app/Contents/PlugIns/Home
-kseniiapetrova     702   0.0  0.1 408242336   9344   ??  Ss    5:11PM   0:00.14 /System/Library/Frameworks/ExtensionFoundation.fram
-kseniiapetrova     701   0.0  0.2 409382992  19712   ??  S     5:11PM   0:00.19 /System/Library/CoreServices/CoreServicesUIAgent.ap
-kseniiapetrova     699   0.0  0.3 408319792  21696   ??  S     5:11PM   0:00.32 /System/Library/CoreServices/TextInputSwitcher.app/
-kseniiapetrova     700   0.0  1.0 410215696  81968   ??  S     5:11PM   0:06.07 /System/Library/CoreServices/Spotlight.app/Contents
-_captiveagent      698   0.0  0.1 408235376   4272   ??  Ss    5:11PM   0:00.07 /usr/libexec/captiveagent
-root               697   0.0  0.1 408233584   4992   ??  Ss    5:11PM   0:00.04 /System/Library/Frameworks/CryptoTokenKit.framework
-kseniiapetrova     689   0.0  0.3 408268800  24448   ??  S     5:11PM   0:00.42 /System/Library/PrivateFrameworks/IMCore.framework/
-kseniiapetrova     682   0.0  0.1 408135920   9424   ??  S     5:11PM   0:00.05 /System/Library/Frameworks/InputMethodKit.framework
-kseniiapetrova     676   0.0  0.3 408271312  24080   ??  S     5:11PM   0:02.83 /System/Library/PrivateFrameworks/HearingCore.frame
-kseniiapetrova     692   0.0  0.1 408132496   7504   ??  S     5:11PM   0:00.05 /usr/libexec/bluetoothuserd
-kseniiapetrova     677   0.0  0.2 408278192  18000   ??  S     5:11PM   0:00.45 /System/Library/PrivateFrameworks/CoreSpeech.framew
-kseniiapetrova     684   0.0  0.1 408264192   5024   ??  S     5:11PM   0:00.06 /System/Library/Image Capture/Support/icdd
-kseniiapetrova     693   0.0  0.4 409818272  34064   ??  S     5:11PM   0:04.52 /System/Library/CoreServices/TextInputMenuAgent.app
-kseniiapetrova     688   0.0  0.2 409399536  14608   ??  S     5:11PM   0:00.12 /System/Library/CoreServices/AirPlayUIAgent.app/Con
-kseniiapetrova     681   0.0  0.5 409823456  45632   ??  S     5:11PM   0:04.51 /System/Library/CoreServices/NotificationCenter.app
-kseniiapetrova     675   0.0  0.2 408301888  16000   ??  Ss    5:11PM   0:00.10 /System/Library/Frameworks/QuickLookThumbnailing.fr
-kseniiapetrova     674   0.0  0.1 408233728   7376   ??  S     5:11PM   0:00.04 /System/Library/PrivateFrameworks/CoreFollowUp.fram
-kseniiapetrova     673   0.0  0.1 408103072   4560   ??  S     5:11PM   0:00.52 /System/Library/Frameworks/ApplicationServices.fram
-root               672   0.0  0.1 408286208  12528   ??  Ss    5:11PM   0:00.23 /System/Library/PrivateFrameworks/AppSSO.framework/
-kseniiapetrova     670   0.0  0.2 409769024  17408   ??  S     5:11PM   0:00.20 /System/Library/PrivateFrameworks/AppSSO.framework/
-kseniiapetrova     671   0.0  0.2 408273648  16784   ??  S     5:11PM   0:02.18 /System/Library/PrivateFrameworks/CacheDelete.frame
-kseniiapetrova     669   0.0  0.1 408141136   6928   ??  S     5:11PM   0:00.09 /System/Library/CoreServices/pbs
-kseniiapetrova     668   0.0  0.1 408225344  10192   ??  S     5:11PM   0:00.12 /usr/libexec/findmydevice-user-agent
-kseniiapetrova     667   0.0  0.2 408274672  16752   ??  S     5:11PM   0:00.49 /System/Library/PrivateFrameworks/iCloudNotificatio
-kseniiapetrova     665   0.0  0.2 408795040  15056   ??  S     5:11PM   0:00.45 /System/Library/Frameworks/QuickLookThumbnailing.fr
-_fpsd              664   0.0  0.1 408104912   4688   ??  Ss    5:11PM   0:00.54 /System/Library/PrivateFrameworks/CoreADI.framework
-kseniiapetrova     663   0.0  0.1 408066384   5248   ??  S     5:11PM   0:00.02 /System/Library/CoreServices/ReportCrash agent
-kseniiapetrova     661   0.0  0.2 408275312  13280   ??  S     5:11PM   0:00.61 /System/Library/PrivateFrameworks/AuthKit.framework
-_nearbyd           662   0.0  0.1 408272304  10800   ??  Ss    5:11PM   0:02.14 /usr/libexec/nearbyd
-_ctkd              657   0.0  0.0 408224944   2560   ??  Ss    5:11PM   0:00.02 /System/Library/Frameworks/CryptoTokenKit.framework
-_oahd              660   0.0  0.0 408525056   1552   ??  Ss    5:11PM   0:00.02 /usr/libexec/rosetta/oahd
-kseniiapetrova     659   0.0  0.0 34028224    288   ??  Ss    5:11PM   0:00.61 /System/Library/Frameworks/AudioToolbox.framework/X
-kseniiapetrova     656   0.0  0.1 408287488  10080   ??  S     5:11PM   0:00.58 /System/Library/Frameworks/ApplicationServices.fram
-kseniiapetrova     658   0.0  0.1 408264240  10384   ??  S     5:11PM   0:00.31 /System/Library/Frameworks/LocalAuthentication.fram
-kseniiapetrova     654   0.0  0.2 408271056  13600   ??  S     5:11PM   0:00.20 /System/Library/PrivateFrameworks/CallHistory.frame
-kseniiapetrova     655   0.0  0.1 408263856   7808   ??  S     5:11PM   0:00.10 /System/Library/Frameworks/AudioToolbox.framework/A
-kseniiapetrova     651   0.0  0.3 408278704  21152   ??  S     5:11PM   0:01.49 /System/Library/PrivateFrameworks/SyncedDefaults.fr
-kseniiapetrova     650   0.0  1.0 408576336  87568   ??  S     5:11PM   0:37.04 /System/Library/PrivateFrameworks/CoreSuggestions.f
-kseniiapetrova     652   0.0  0.2 408280464  14224   ??  S     5:11PM   0:01.11 /usr/libexec/transparencyd
-kseniiapetrova     653   0.0  0.1 408264304   7104   ??  S     5:11PM   0:00.12 /System/Library/Frameworks/CryptoTokenKit.framework
-kseniiapetrova     649   0.0  0.3 408280816  29312   ??  S     5:11PM   0:01.32 /System/Library/PrivateFrameworks/TelephonyUtilitie
-kseniiapetrova     648   0.0  0.2 408264192  17328   ??  S     5:11PM   0:00.12 /System/Library/PrivateFrameworks/SocialLayer.frame
-kseniiapetrova     647   0.0  0.1 408264880   6576   ??  S     5:11PM   0:00.80 /System/Library/Frameworks/ApplicationServices.fram
-kseniiapetrova     643   0.0  0.2 408273632  14576   ??  S     5:11PM   0:00.27 /System/Library/PrivateFrameworks/FamilyCircle.fram
-kseniiapetrova     646   0.0  0.1 408234640   9520   ??  S     5:11PM   0:00.06 /usr/libexec/replayd
-kseniiapetrova     644   0.0  0.4 408783568  32288   ??  Ss    5:11PM   0:00.90 /System/Library/CoreServices/Dock.app/Contents/XPCS
-kseniiapetrova     641   0.0  0.4 408295840  33216   ??  S     5:11PM   0:12.03 /System/Library/PrivateFrameworks/CloudKitDaemon.fr
-kseniiapetrova     642   0.0  0.2 408264384  13136   ??  S     5:11PM   0:01.47 /System/Library/PrivateFrameworks/BiomeStreams.fram
-kseniiapetrova     638   0.0  0.2 408273344  16352   ??  S     5:11PM   0:01.53 /System/Library/PrivateFrameworks/UserActivity.fram
-kseniiapetrova     639   0.0  0.1 408273440   6944   ??  S     5:11PM   0:00.06 /System/Library/PrivateFrameworks/AMPDevices.framew
-kseniiapetrova     637   0.0  0.5 408494880  37760   ??  S     5:11PM   0:04.49 /System/Library/PrivateFrameworks/HomeKitDaemon.fra
-kseniiapetrova     634   0.0  0.1 408134464  10944   ??  Ss    5:11PM   0:00.69 /System/Library/PrivateFrameworks/CoreEmbeddedSpeec
-root               636   0.0  0.0 408104176   3680   ??  Ss    5:11PM   0:00.02 automountd
-kseniiapetrova     635   0.0  0.4 408298752  36432   ??  S     5:11PM   0:03.80 /System/Library/PrivateFrameworks/IDS.framework/ide
-kseniiapetrova     633   0.0  0.2 408274912  12992   ??  S     5:11PM   0:00.32 /System/Library/CoreServices/sharedfilelistd
-kseniiapetrova     628   0.0  0.1 408276640  10688   ??  S     5:11PM   0:00.23 /System/Library/PrivateFrameworks/FileProvider.fram
-kseniiapetrova     629   0.0  0.1 408396896   9072   ??  S     5:11PM   0:01.17 /System/Library/PrivateFrameworks/ViewBridge.framew
-kseniiapetrova     632   0.0  0.2 408317936  14096   ??  S     5:11PM   0:01.25 /System/Library/CoreServices/iconservicesagent
-kseniiapetrova     631   0.0  0.3 408273360  23968   ??  S     5:11PM   0:02.21 /System/Library/PrivateFrameworks/CalendarDaemon.fr
-kseniiapetrova     630   0.0  0.3 408278704  23712   ??  S     5:11PM   0:00.50 /System/Library/PrivateFrameworks/DoNotDisturbServe
-kseniiapetrova     627   0.0  0.5 408313584  38784   ??  S     5:11PM   0:05.69 /System/Library/Frameworks/Accounts.framework/Versi
-_appleevents       625   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.21 /usr/sbin/distnoted agent
-kseniiapetrova     626   0.0  0.2 408273472  14032   ??  S     5:11PM   0:04.07 /System/Library/PrivateFrameworks/TCC.framework/Sup
-kseniiapetrova     624   0.0  0.2 408264896  16144   ??  S     5:11PM   0:00.19 /usr/libexec/siriknowledged
-kseniiapetrova     617   0.0  0.2 408273840  16992   ??  S     5:11PM   0:00.93 /usr/libexec/networkserviceproxy
-kseniiapetrova     621   0.0  0.1 408264080   8800   ??  S     5:11PM   0:00.36 /System/Library/PrivateFrameworks/MobileTimer.frame
-kseniiapetrova     618   0.0  0.6 408938592  52784   ??  S     5:11PM   0:06.82 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova     620   0.0  0.1 408266800  10384   ??  S     5:11PM   0:00.81 /usr/libexec/linkd
-kseniiapetrova     615   0.0  0.3 408276096  22640   ??  S     5:11PM   0:00.96 /System/Library/PrivateFrameworks/AssistantServices
-kseniiapetrova     619   0.0  0.2 408272336  13936   ??  S     5:11PM   0:01.17 /usr/libexec/swcd
-kseniiapetrova     623   0.0  0.1 408242080   8976   ??  S     5:11PM   0:00.43 /usr/libexec/pboard
-kseniiapetrova     616   0.0  0.3 408415824  23152   ??  S     5:11PM   0:00.34 /System/Library/PrivateFrameworks/VoiceShortcuts.fr
-kseniiapetrova     612   0.0  0.2 408275040  20208   ??  S     5:11PM   0:01.23 /System/Library/PrivateFrameworks/CloudDocsDaemon.f
-kseniiapetrova     609   0.0  0.2 408401552  17632   ??  S     5:11PM   0:00.19 /System/Library/CoreServices/CoreLocationAgent.app/
-root               622   0.0  0.1 408242032   9360   ??  Ss    5:11PM   0:00.16 /usr/sbin/filecoordinationd
-kseniiapetrova     614   0.0  0.2 408271760  14016   ??  S     5:11PM   0:00.53 /usr/libexec/pkd
-kseniiapetrova     605   0.0  0.3 408275904  22080   ??  S     5:11PM   0:01.57 /usr/libexec/ContinuityCaptureAgent
-kseniiapetrova     602   0.0  0.1 408269424  11632   ??  S     5:11PM   0:00.22 /usr/libexec/dmd
-kseniiapetrova     600   0.0  0.4 408283520  32624   ??  S     5:11PM   0:03.53 /System/Library/PrivateFrameworks/ScreenTimeCore.fr
-kseniiapetrova     599   0.0  0.2 408266144  18992   ??  S     5:11PM   0:01.58 /usr/libexec/rapportd
-kseniiapetrova     598   0.0  0.3 408284848  26256   ??  S     5:11PM   0:05.48 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
-kseniiapetrova     613   0.0  0.2 408276016  13552   ??  S     5:11PM   0:14.42 /usr/libexec/trustd --agent
-root               603   0.0  0.1 408277920   7584   ??  Ss    5:11PM   0:00.16 /usr/sbin/systemsoundserverd
-root               607   0.0  0.1 408263568   6240   ??  Ss    5:11PM   0:00.07 /usr/libexec/mobileactivationd
-kseniiapetrova     610   0.0  0.1 408272784   9472   ??  S     5:11PM   0:00.48 /usr/libexec/secinitd
-kseniiapetrova     608   0.0  0.2 408745200  19072   ??  Ss    5:11PM   0:00.23 /System/Library/Frameworks/QuickLookUI.framework/Ve
-kseniiapetrova     606   0.0  0.1 408263776   7120   ??  S     5:11PM   0:01.10 /usr/libexec/containermanagerd --runmode=agent --us
-kseniiapetrova     601   0.0  0.0 408102944   2288   ??  S     5:11PM   0:00.01 /System/Library/Frameworks/CoreServices.framework/V
-kseniiapetrova     597   0.0  0.2 408274544  19872   ??  S     5:11PM   0:00.74 /usr/sbin/usernoted
-kseniiapetrova     595   0.0  0.2 408284832  19136   ??  S     5:11PM   0:04.21 /usr/libexec/nsurlsessiond
-kseniiapetrova     596   0.0  0.1 408264512   9152   ??  S     5:11PM   0:01.71 /System/Library/CoreServices/lockoutagent
-kseniiapetrova     591   0.0  0.2 408481920  20656   ??  S     5:11PM   0:05.37 /usr/libexec/secd
-kseniiapetrova     592   0.0  0.1 408069216   4544   ??  S     5:11PM   0:00.03 /System/Library/CoreServices/APFSUserAgent
-kseniiapetrova     590   0.0  0.2 408277296  20784   ??  S     5:11PM   0:00.62 /System/Library/Frameworks/CoreTelephony.framework/
-kseniiapetrova     589   0.0  1.1 409940992  94896   ??  S     5:11PM   0:35.13 /System/Library/CoreServices/Finder.app/Contents/Ma
-kseniiapetrova     585   0.0  0.2 408273968  19168   ??  S     5:11PM   0:01.04 /usr/libexec/lsd
-kseniiapetrova     588   0.0  0.3 409247616  21120   ??  S     5:11PM   0:00.26 /System/Library/CoreServices/SystemUIServer.app/Con
-root               584   0.0  0.2 408271392  15424   ??  Ss    5:11PM   0:00.27 /usr/libexec/findmydeviced
-kseniiapetrova     586   0.0  0.4 409785968  32208   ??  S     5:11PM   0:05.54 /System/Library/CoreServices/Dock.app/Contents/MacO
-kseniiapetrova     583   0.0  0.2 408310160  16384   ??  S     5:11PM   0:00.18 /System/Library/CoreServices/talagent
-kseniiapetrova     582   0.0  0.3 409147072  21904   ??  S     5:11PM   0:17.95 /System/Library/CoreServices/WindowManager.app/Cont
-kseniiapetrova     580   0.0  0.4 408284400  36272   ??  S     5:11PM   0:11.99 /usr/libexec/knowledge-agent
-kseniiapetrova     575   0.0  0.2 408268784  15792   ??  S     5:11PM   0:01.70 /usr/libexec/UserEventAgent (Aqua)
-kseniiapetrova     579   0.0  0.2 408874688  15168   ??  S     5:11PM   0:01.12 /usr/sbin/universalaccessd launchd -s
-root               574   0.0  0.0 408224832   2496   ??  Ss    5:11PM   0:00.05 /System/Library/PrivateFrameworks/CoreKDL.framework
-root               573   0.0  0.0 408197232   1392   ??  Ss    5:11PM   0:00.04 /usr/libexec/securityd_service
-kseniiapetrova     572   0.0  0.1 408236592   4960   ??  S     5:11PM   0:06.33 /usr/sbin/cfprefsd agent
-_cmiodalassistants   570   0.0  0.0 408226912   3392   ??  S     5:11PM   0:00.06 /usr/libexec/containermanagerd --runmode=agent --us
-root               569   0.0  0.1 408265312  11600   ??  Ss    5:11PM   0:00.10 /System/Library/Frameworks/LocalAuthentication.fram
-_cmiodalassistants   567   0.0  0.1 408266944   6096   ??  S     5:11PM   0:00.14 /usr/libexec/trustd --agent
-_cmiodalassistants   566   0.0  0.0 408209440   1920   ??  S     5:11PM   0:00.05 /usr/sbin/cfprefsd agent
-_nsurlsessiond     564   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.21 /usr/sbin/distnoted agent
-root               563   0.0  0.1 408265008  10208   ??  Ss    5:11PM   0:01.72 /usr/sbin/WirelessRadioManagerd
-_cmiodalassistants   561   0.0  0.1 408227936   4608   ??  S     5:11PM   0:00.06 /usr/libexec/secinitd
-_cmiodalassistants   560   0.0  0.1 408272400  12160   ??  S     5:11PM   0:00.49 /System/Library/PrivateFrameworks/GeoServices.frame
-root               404   0.0  0.1 408226368   4752   ??  Ss    5:11PM   0:00.09 /usr/libexec/usbd
-root               371   0.0  0.1 408196768   5344   ??  Ss    5:11PM   0:00.06 /System/Library/CoreServices/backupd.bundle/Content
-root               559   0.0  0.1 408097728   8272   ??  Ss    5:11PM   0:00.05 /usr/sbin/BTLEServer
-_spotlight         542   0.0  0.0 408168944   1904   ??  S     5:11PM   0:00.21 /usr/sbin/distnoted agent
-root               539   0.0  0.1 408225936   4368   ??  Ss    5:11PM   0:00.05 /System/Library/Frameworks/GSS.framework/Helpers/GS
-root               519   0.0  0.1 409252944   7312   ??  Ss    5:11PM   0:00.07 /private/var/db/com.apple.xpc.roleaccountd.staging/
-root               517   0.0  0.1 408238080   5008   ??  Ss    5:11PM   0:00.09 /System/Library/PrivateFrameworks/BackgroundTaskMan
-root               526   0.0  0.2 408265696  13824   ??  Ss    5:11PM   0:00.51 /usr/libexec/wifianalyticsd
-root               520   0.0  0.0 408264976   3808   ??  Ss    5:11PM   0:00.13 /usr/libexec/xpcroleaccountd -launchd
-root               515   0.0  0.1 408236528   6800   ??  Ss    5:11PM   0:00.10 /usr/libexec/countryd
-root               514   0.0  0.0 408225856   2016   ??  Ss    5:11PM   0:00.01 /System/Library/PrivateFrameworks/AccountPolicy.fra
-_locationd         510   0.0  0.0 408263776   3440   ??  S     5:11PM   0:00.04 /usr/libexec/containermanagerd --runmode=agent --us
-root               509   0.0  0.1 408134352   4912   ??  Ss    5:11PM   0:00.08 /System/Library/PrivateFrameworks/MobileSoftwareUpd
-root               508   0.0  0.1 408197648   5104   ??  Ss    5:11PM   0:00.03 /usr/libexec/bootinstalld
-root               507   0.0  0.7 409633520  60416   ??  Ss    5:11PM   0:58.75 /System/Library/Frameworks/CoreServices.framework/F
-_locationd         506   0.0  0.1 408266944   6208   ??  S     5:11PM   0:00.12 /usr/libexec/trustd --agent
-root               504   0.0  0.0 408209472   3488   ??  Ss    5:11PM   0:00.14 /System/Library/PrivateFrameworks/CoreSymbolication
-_locationd         503   0.0  0.0 408201248   1904   ??  S     5:11PM   0:00.06 /usr/sbin/cfprefsd agent
-_locationd         502   0.0  0.1 408264800   4640   ??  S     5:11PM   0:00.05 /usr/libexec/secinitd
-root               500   0.0  0.1 408264640   6592   ??  Ss    5:11PM   0:00.48 /usr/libexec/aned
-_softwareupdate    499   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.20 /usr/sbin/distnoted agent
-_appleevents       501   0.0  0.1 408264976   5344   ??  Ss    5:11PM   0:00.12 /System/Library/CoreServices/appleeventsd --server
-root               498   0.0  0.1 408258960   9520   ??  Ss    5:11PM   0:00.12 /System/Library/CoreServices/Software Update.app/Co
-_locationd         495   0.0  0.0 408168944   1920   ??  S     5:11PM   0:00.28 /usr/sbin/distnoted agent
-_locationd         494   0.0  0.1 408273424  11968   ??  S     5:11PM   0:00.54 /System/Library/PrivateFrameworks/GeoServices.frame
-root               493   0.0  0.0 408233456   3712   ??  Ss    5:11PM   0:00.05 /usr/libexec/colorsyncd
-_cmiodalassistants   492   0.0  0.1 408266384   6960   ??  Ss    5:11PM   0:00.09 /System/Library/Frameworks/CoreMediaIO.framework/Ve
-root               491   0.0  0.0 408069152   2864   ??  Ss    5:11PM   0:00.01 /System/Library/Frameworks/ColorSync.framework/Vers
-_cmiodalassistants   489   0.0  0.1 408269376   6992   ??  Ss    5:11PM   0:00.71 /usr/sbin/appleh13camerad
-root               490   0.0  0.1 408233520   4320   ??  Ss    5:11PM   0:00.05 /usr/libexec/colorsync.displayservices
-_softwareupdate    487   0.0  0.3 412766736  27824   ??  Ss    5:11PM   0:19.17 /System/Library/CoreServices/Software Update.app/Co
-_iconservices      322   0.0  0.1 408264352   4288   ??  Ss    5:11PM   0:00.07 /System/Library/CoreServices/iconservicesd
-_softwareupdate    315   0.0  0.1 408267696   5952   ??  Ss    5:11PM   0:00.24 /System/Library/PrivateFrameworks/MobileSoftwareUpd
-root               468   0.0  0.2 408279744  19248   ??  Ss    5:11PM   0:36.57 /usr/libexec/mobileassetd
-root               483   0.0  0.2 408283168  17040   ??  Ss    5:11PM   0:01.46 /usr/libexec/searchpartyd
-root               482   0.0  0.1 408217840   7456   ??  Ss    5:11PM   0:00.02 /System/Library/PrivateFrameworks/WiFiPolicy.framew
-root               480   0.0  0.2 408174608  13472   ??  Ss    5:11PM   0:00.93 /usr/libexec/wifip2pd
-root               479   0.0  0.0 408223104   3536   ??  Ss    5:11PM   0:00.04 /usr/sbin/BlueTool -R
-root               477   0.0  0.1 408267200  10528   ??  Ss    5:11PM   0:00.55 /usr/libexec/diskmanagementd
-_networkd          476   0.0  0.2 408251504  15920   ??  Ss    5:11PM   0:02.28 /usr/libexec/symptomsd
-root               474   0.0  0.1 408198784   4592   ??  Ss    5:11PM   0:00.05 /System/Library/CoreServices/backupd.bundle/Content
-_biome             308   0.0  0.1 408264512  12544   ??  Ss    5:11PM   0:00.84 /System/Library/PrivateFrameworks/BiomeStreams.fram
-root               470   0.0  0.1 408266192   7264   ??  Ss    5:11PM   0:00.77 /System/Library/Frameworks/Security.framework/Versi
-_coreaudiod        469   0.0  0.0 408215808   4000   ??  Ss    5:11PM   0:00.01 /System/Library/PrivateFrameworks/ZhuGeSupport.fram
-root               467   0.0  0.0 408543712   2144   ??  Ss    5:11PM   0:00.02 /usr/libexec/cryptexd
-root               465   0.0  0.0 408234000   3952   ??  Ss    5:11PM   0:00.23 /System/Library/Frameworks/Security.framework/Versi
-root               464   0.0  0.1 408264528   6416   ??  Ss    5:11PM   0:00.54 /usr/sbin/mDNSResponderHelper
-_driverkit         463   0.0  0.0 408531968   2384   ??  Ss    5:11PM   3:31.16 /System/Library/DriverExtensions/com.apple.AppleUse
-_driverkit         462   0.0  0.0 408496816    880   ??  Ss    5:11PM   0:00.02 /System/Library/DriverExtensions/com.apple.DriverKi
-root               461   0.0  0.1 408265568   4592   ??  Ss    5:11PM   0:00.05 /System/Library/Frameworks/SystemExtensions.framewo
-_cmiodalassistants   460   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.22 /usr/sbin/distnoted agent
-root               459   0.0  0.1 408086864   4256   ??  Ss    5:11PM   0:00.02 /System/Library/CoreServices/ReportCrash daemon
-_locationd         340   0.0  0.2 408280976  18944   ??  Ss    5:11PM   0:03.44 /usr/libexec/locationd
-root               458   0.0  0.0 408066176   1728   ??  Ss    5:11PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions
-root               449   0.0  0.1 408264432   6432   ??  Ss    5:11PM   0:00.06 /System/Library/PrivateFrameworks/WirelessDiagnosti
-_netbios           452   0.0  0.1 408197568   4928   ??  SNs   5:11PM   0:00.14 /usr/sbin/netbiosd
-_analyticsd        383   0.0  0.2 408274240  15728   ??  Ss    5:11PM   0:04.89 /System/Library/PrivateFrameworks/CoreAnalytics.fra
-root               443   0.0  0.0 408245344   3488   ??  Ss    5:11PM   0:00.08 /usr/libexec/containermanagerd --runmode=privileged
-_coreaudiod        445   0.0  0.0 408200256   3520   ??  Ss    5:11PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/X
-root               442   0.0  0.0 408234064   3728   ??  Ss    5:11PM   0:00.06 /System/Library/Frameworks/AudioToolbox.framework/A
-_windowserver      426   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.24 /usr/sbin/distnoted agent
-_coreaudiod        430   0.0  0.0 408168944   1744   ??  S     5:11PM   0:00.23 /usr/sbin/distnoted agent
-_coreaudiod        441   0.0  0.0 408084512   2080   ??  Ss    5:11PM   0:00.01 /System/Library/Frameworks/CoreAudio.framework/Vers
-_mdnsresponder     432   0.0  0.2 408271824  13520   ??  Ss    5:11PM   0:04.95 /usr/sbin/mDNSResponder
-root               427   0.0  0.1 408227920   4640   ??  Ss    5:11PM   0:00.06 /usr/libexec/secinitd
-root               420   0.0  0.0 408168944   1728   ??  S     5:11PM   0:00.24 /usr/sbin/distnoted agent
-root               412   0.0  0.0 408094752   2080   ??  S     5:11PM   0:00.01 /System/Library/Frameworks/CoreServices.framework/V
-_hidd              424   0.0  0.0 408102400   3392   ??  Ss    5:11PM   0:00.08 /usr/libexec/hidd
-_nsurlsessiond     382   0.0  0.2 408279792  15712   ??  Ss    5:11PM   0:01.54 /usr/libexec/nsurlsessiond --privileged
-_coreaudiod        406   0.0  0.4 409221968  32784   ??  Ss    5:11PM   0:42.83 /usr/sbin/coreaudiod
-root               380   0.0  0.0 408102480   3296   ??  Ss    5:11PM   0:00.07 /usr/libexec/apfsd
-root               408   0.0  0.0 408233456   3840   ??  Ss    5:11PM   0:00.04 /System/Library/PrivateFrameworks/SystemStatusServe
-root               407   0.0  0.1 408264864   9904   ??  Ss    5:11PM   0:00.14 /usr/libexec/biometrickitd --launchd
-root               378   0.0  0.0 408225360   2928   ??  Ss    5:11PM   0:00.02 /System/Library/CryptoTokenKit/com.apple.ifdreader.
-root               385   0.0  0.1 408263936   7792   ??  Ss    5:11PM   0:00.49 /usr/libexec/nehelper
-root               419   0.0  0.0 408206960   3008   ??  Ss    5:11PM   0:00.04 /usr/libexec/trustdFileHelper
-_trustd            386   0.0  0.2 408273568  13232   ??  Ss    5:11PM   0:25.28 /usr/libexec/trustd
-root               388   0.0  0.2 408275536  13360   ??  Ss    5:11PM   0:13.88 /usr/libexec/runningboardd
-root               372   0.0  0.2 408258880  12992   ??  Ss    5:11PM   0:00.42 /usr/libexec/PowerUIAgent
-root               368   0.0  0.2 408289328  18944   ??  Ss    5:11PM   0:05.42 /System/Library/PrivateFrameworks/CoreDuetContext.f
-root               365   0.0  0.0 408188672    368   ??  Ss    5:11PM   0:00.03 aslmanager
-root               369   0.0  0.1 408253712   4944   ??  Ss    5:11PM   0:00.37 /System/Library/CoreServices/coreservicesd
-root               367   0.0  0.2 408273248  19376   ??  Ss    5:11PM   0:01.19 /usr/libexec/lsd runAsRoot
-_timed             335   0.0  0.1 408264208   5440   ??  Ss    5:11PM   0:00.13 /usr/libexec/timed
-_usbmuxd           336   0.0  0.1 408254544   5456   ??  Ss    5:11PM   0:00.14 /System/Library/PrivateFrameworks/MobileDevice.fram
-kseniiapetrova     366   0.0  0.7 409866768  55680   ??  Ss    5:11PM   0:01.98 /System/Library/CoreServices/loginwindow.app/Conten
-root               364   0.0  0.2 408274240  14656   ??  Ss    5:11PM   0:02.95 /System/Library/PrivateFrameworks/TCC.framework/Sup
-root               363   0.0  0.1 408235264   5248   ??  Ss    5:11PM   0:05.67 /usr/sbin/cfprefsd daemon
-root               361   0.0  0.2 408358336  20464   ??  Ss    5:11PM   0:19.81 /usr/libexec/syspolicyd
-root               360   0.0  0.0 408233712   1808   ??  Ss    5:11PM   0:00.13 /usr/libexec/logd_helper
-root               307   0.0  0.0 408197216   3296   ??  Ss    5:11PM   0:00.01 /usr/libexec/IOMFB_bics_daemon
-root               299   0.0  0.3 408275824  24464   ??  Ss    5:11PM   0:03.21 /System/Library/PrivateFrameworks/MediaRemote.frame
-root               294   0.0  0.0 408066192   2528   ??  Ss    5:11PM   0:00.03 /usr/libexec/smd
-root               359   0.0  0.2 408264272  16752   ??  Ss    5:11PM   0:00.10 /System/Library/Frameworks/CoreMediaIO.framework/Ve
-root               343   0.0  0.2 408274192  16688   ??  Ss    5:11PM   0:10.05 /usr/libexec/dasd
-root               302   0.0  0.2 408259504  13696   ??  Ss    5:11PM   0:04.09 /usr/sbin/systemstats --daemon
-root               328   0.0  0.0 408218224   1600   ??  Ss    5:11PM   0:00.47 /usr/sbin/syslogd
-root               348   0.0  0.0 408049664    336   ??  Ss    5:11PM   0:00.02 /usr/libexec/dirhelper
-root               350   0.0  0.1 408264944   5904   ??  Ss    5:11PM   0:00.11 /System/Library/PrivateFrameworks/GenerationalStora
-root               334   0.0  0.1 408267296  10336   ??  Ss    5:11PM   0:03.13 /System/Library/CoreServices/launchservicesd
-root               327   0.0  0.2 408274800  17648   ??  Ss    5:11PM   0:07.62 /usr/libexec/coreduetd
-root               305   0.0  0.0 408057392   1632   ??  Ss    5:11PM   0:00.01 endpointsecurityd
-root               358   0.0  0.1 408265248  11616   ??  Ss    5:11PM   0:01.03 /usr/libexec/AirPlayXPCHelper
-root               356   0.0  0.1 408134592   5088   ??  Ss    5:11PM   0:00.04 /usr/libexec/sandboxd
-root               351   0.0  0.0 408066096   1392   ??  Ss    5:11PM   0:00.01 /usr/sbin/KernelEventAgent
-root               352   0.0  0.1 408954816   5456   ??  Ss    5:11PM   0:00.13 /usr/libexec/usermanagerd -t 15
-root               349   0.0  0.1 408102464   5232   ??  Ss    5:11PM   0:00.04 /System/Library/CoreServices/logind
-root               346   0.0  0.0 408086656   3440   ??  Ss    5:11PM   0:00.03 /System/Library/PrivateFrameworks/AppleCredentialMa
-root               342   0.0  0.0 408201248   2304   ??  Ss    5:11PM   0:00.01 autofsd
-root               338   0.0  0.0 408059344   1440   ??  Ss    5:11PM   0:00.01 auditd -l
-root               337   0.0  0.1 408268832   8800   ??  Ss    5:11PM   0:01.13 /usr/sbin/securityd -i
-root               332   0.0  0.2 408287280  15200   ??  Ss    5:11PM   0:09.59 /usr/libexec/opendirectoryd
-root               333   0.0  0.2 408348992  15920   ??  Ss    5:11PM   0:01.83 /System/Library/PrivateFrameworks/ApplePushService.
-root               331   0.0  0.1 408227488   4560   ??  Ss    5:11PM   0:05.38 /usr/libexec/thermalmonitord
-root               323   0.0  0.1 408271600   6480   ??  Ss    5:11PM   0:00.85 /usr/libexec/kernelmanagerd
-root               321   0.0  0.4 408564320  33664   ??  Ss    5:11PM   0:48.79 /System/Library/Frameworks/CoreServices.framework/F
-root               324   0.0  0.1 408263888   4512   ??  Ss    5:11PM   0:00.74 /usr/libexec/diskarbitrationd
-root               317   0.0  0.0 408067184   3328   ??  Ss    5:11PM   0:00.41 /usr/libexec/watchdogd
-root               355   0.0  0.0 408233744   2656   ??  Ss    5:11PM   0:04.53 /usr/sbin/notifyd
-root               312   0.0  0.0 408254896   3392   ??  Ss    5:11PM   0:00.04 /usr/libexec/remoted
-root               314   0.0  0.0 408199904   2656   ??  Ss    5:11PM   0:00.03 /usr/libexec/keybagd -t 15
-root               306   0.0  0.1 408266400  10864   ??  Ss    5:11PM   0:06.99 /System/Library/CoreServices/powerd.bundle/powerd
-root               310   0.0  0.1 408265632   5840   ??  Ss    5:11PM   0:00.47 /usr/libexec/amfid
-root               304   0.0  0.1 408268448  11696   ??  Ss    5:11PM   0:03.31 /usr/libexec/configd
-root               297   0.0  0.0 408057920   3104   ??  Ss    5:11PM   0:00.32 /System/Library/PrivateFrameworks/Uninstall.framewo
-root               298   0.0  0.1 408381104   6064   ??  Ss    5:11PM   0:12.07 /System/Library/Frameworks/CoreServices.framework/V
-root               293   0.0  0.5 408369520  40960   ??  Ss    5:11PM   0:23.08 /usr/libexec/logd
-root               295   0.0  0.2 408267120  15648   ??  Ss    5:11PM   0:01.42 /usr/libexec/UserEventAgent (System)
-root              4917   0.0  0.0 408111760   1744 s012  R+    7:51PM   0:00.00 ps aux
-root                 1   0.0  0.2 409218880  19616   ??  Ss    5:09PM   0:25.15 /sbin/launchd
-kseniiapetrova    4915   0.0  0.3 408213616  23920   ??  S     7:51PM   0:00.09 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4913   0.0  0.2 408213056  18384   ??  S     7:51PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4914   0.0  0.2 408213056  18352   ??  S     7:51PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4912   0.0  0.2 408213056  18368   ??  S     7:51PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4911   0.0  0.2 408213056  18352   ??  S     7:51PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4910   0.0  0.2 408213056  18320   ??  S     7:51PM   0:00.07 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4896   0.0  0.3 408213616  25312   ??  S     7:50PM   0:00.10 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4772   0.0  0.3 408213616  27808   ??  S     7:48PM   0:00.24 /System/Library/Frameworks/CoreServices.framework/F
-kseniiapetrova    4690   0.0  0.0 408430576   2976 s012  Ss    7:47PM   0:00.13 /bin/zsh -il
-kseniiapetrova    4333   0.0  0.1 408256352  10432   ??  S     7:38PM   0:00.20 /System/Library/PrivateFrameworks/AOSKit.framework/
-kseniiapetrova    4240   0.0  0.4 497040560  33888   ??  Ss    7:36PM   0:00.05 /System/Library/Frameworks/WebKit.framework/Version
-kseniiapetrova    4027   0.0  0.3 408300976  24368   ??  S     7:31PM   0:00.46 /System/Library/PrivateFrameworks/IntelligencePlatf
-kseniiapetrova    4009   0.0  0.4 408240016  30432   ??  S     7:28PM   0:00.35 /System/Library/PrivateFrameworks/AvatarPersistence
-root              3995   0.0  0.0 408066784   2304   ??  Ss    7:26PM   0:00.02 /System/Library/PrivateFrameworks/AppleNeuralEngine
-kseniiapetrova    3990   0.0  0.2 408236448  16608   ??  S     7:25PM   0:00.13 /System/Library/PrivateFrameworks/IMDPersistence.fr
-kseniiapetrova    3987   0.0  0.0 408226368   3984   ??  S     7:25PM   0:00.06 /usr/libexec/metrickitd
+kseniiapetrova     955   7.9  3.4 1619941296 288752   ??  S    10:09PM   0:13.20 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+_windowserver      352   5.0  1.1 410248784  91264   ??  Ss   10:07PM   0:58.33 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServe
+root               345   3.5  0.3 408318864  27760   ??  Ss   10:07PM   0:02.83 /usr/sbin/bluetoothd
+kseniiapetrova     949   1.5  0.9 442088256  71776   ??  S    10:09PM   0:02.84 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova     939   1.4  2.2 1622318928 184864   ??  S    10:09PM   0:07.85 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova     966   0.8  0.9 1621729296  72048   ??  S    10:09PM   0:02.05 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova     630   0.4  0.4 408282080  33392   ??  S    10:07PM   0:01.93 /usr/libexec/sharingd
+_locationd         331   0.2  0.2 408281120  20944   ??  Ss   10:07PM   0:00.77 /usr/libexec/locationd
+root               284   0.2  0.3 408354720  28000   ??  Ss   10:07PM   0:03.19 /usr/libexec/logd
+root               297   0.1  0.1 408266384   9840   ??  Ss   10:07PM   0:00.77 /System/Library/CoreServices/powerd.bundle/powerd
+kseniiapetrova    1071   0.1  1.4 1621727792 115936   ??  S    10:15PM   0:00.88 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+root               489   0.1  0.3 408283168  21424   ??  Ss   10:07PM   0:00.42 /usr/libexec/searchpartyd
+kseniiapetrova     999   0.1  1.7 514501712 141152   ??  Ss   10:10PM   0:02.68 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+root               323   0.1  0.2 408286160  14480   ??  Ss   10:07PM   0:02.73 /usr/libexec/opendirectoryd
+root                 1   0.1  0.2 409218880  19312   ??  Ss   10:07PM   0:06.09 /sbin/launchd
+root               348   0.1  0.1 408265648  11680   ??  Ss   10:07PM   0:01.78 /usr/libexec/corebrightnessd --launchd
+kseniiapetrova    1031   0.0  0.6 408386688  49568   ??  S    10:14PM   0:00.61 /System/Library/PrivateFrameworks/AMPLibrary.framework/Versions/A/Support/
+_fpsd             1030   0.0  0.2 408241952  16672   ??  Ss   10:14PM   0:00.13 /System/Library/PrivateFrameworks/CoreFP.framework/Versions/A/fairplayd
+kseniiapetrova    1029   0.0  2.3 414722560 196624   ??  S    10:14PM   0:02.68 /System/Applications/Music.app/Contents/MacOS/Music
+root              1017   0.0  0.1 408685984   6208   ??  Ss   10:13PM   0:00.02 /usr/libexec/memoryanalyticsd -xlatS
+root              1015   0.0  0.1 408228528  10384   ??  Ss   10:13PM   0:00.06 /usr/libexec/ASPCarryLog
+kseniiapetrova    1014   0.0  0.2 408229536  18752   ??  S    10:12PM   0:00.35 /System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/Versi
+kseniiapetrova    1006   0.0  0.1 408227872   4880   ??  S    10:10PM   0:00.07 /usr/libexec/proactiveeventtrackerd
+kseniiapetrova    1005   0.0  0.4 513973424  29680   ??  Ss   10:10PM   0:00.05 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova    1000   0.0  0.0 408066112   2960   ??  S    10:10PM   0:00.03 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Di
+kseniiapetrova     964   0.0  1.4 1621736304 116976   ??  S    10:09PM   0:01.82 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova     958   0.0  0.1 408227136   5984   ??  S    10:09PM   0:00.06 /usr/libexec/MTLAssetUpgraderD
+root               953   0.0  0.1 408255904   8416   ??  Ss   10:09PM   0:01.96 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/CAReportingS
+root               952   0.0  0.1 408215616   4256   ??  Ss   10:09PM   0:00.04 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.au
+_spotlight         950   0.0  0.0 408196576   3296   ??  S    10:09PM   0:00.05 /usr/libexec/containermanagerd --runmode=agent --user-container-mode=curre
+kseniiapetrova     951   0.0  0.4 441872768  33840   ??  S    10:09PM   0:00.19 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova     948   0.0  0.0 441605456   3712   ??  S    10:09PM   0:00.01 /var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/F272755D
+kseniiapetrova     946   0.0  0.2 408273264  17488   ??  S    10:09PM   0:00.21 /System/Library/Frameworks/StoreKit.framework/Support/storekitagent
+_spotlight         945   0.0  0.1 408229536   7680   ??  S    10:09PM   0:00.19 /usr/libexec/trustd --agent
+_spotlight         944   0.0  0.1 408229664  10928   ??  SN   10:09PM   0:00.67 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+kseniiapetrova     943   0.0  0.1 408197712   7424   ??  S    10:09PM   0:00.34 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+kseniiapetrova     941   0.0  1.6 497710816 132704   ??  Ss   10:09PM   0:01.11 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     940   0.0  0.3 408243648  26160   ??  S    10:09PM   0:01.05 /System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd
+kseniiapetrova     938   0.0  0.0 408066176   2320   ??  Ss   10:09PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLi
+kseniiapetrova     937   0.0  0.6 409202752  51952   ??  Ss   10:09PM   0:01.25 /System/Library/Frameworks/QuickLook.framework/Versions/A/XPCServices/Quic
+_rmd               935   0.0  0.1 408677552   5344   ??  Ss   10:09PM   0:00.09 /System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/M
+_rmd               934   0.0  0.1 408656176   8576   ??  Ss   10:09PM   0:00.10 /System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/A
+_rmd               933   0.0  0.1 408655984   4576   ??  Ss   10:09PM   0:00.08 /System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/P
+_rmd               932   0.0  0.1 408655984   4528   ??  Ss   10:09PM   0:00.08 /System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/L
+_rmd               931   0.0  0.0 408168944   1808   ??  S    10:09PM   0:00.05 /usr/sbin/distnoted agent
+_rmd               930   0.0  0.1 408655984   4544   ??  Ss   10:09PM   0:00.06 /System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/I
+_rmd               927   0.0  0.1 408229600   7344   ??  Ss   10:09PM   0:00.19 /System/Library/PrivateFrameworks/RemoteManagement.framework/remotemanagem
+root               926   0.0  0.0 408057952   2416   ??  Ss   10:09PM   0:00.02 /usr/libexec/online-authd
+kseniiapetrova     925   0.0  0.2 408826368  13840   ??  Ss   10:09PM   0:00.07 /System/Library/PrivateFrameworks/SafariShared.framework/Versions/A/XPCSer
+kseniiapetrova     924   0.0  0.5 497590464  41360   ??  Ss   10:09PM   0:00.10 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     923   0.0  3.3 498809184 279856   ??  Ss   10:09PM   0:25.78 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     921   0.0  0.4 514004000  31792   ??  Ss   10:09PM   0:00.05 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     920   0.0  0.1 408231344  12432   ??  S    10:09PM   0:00.07 /usr/libexec/keyboardservicesd
+kseniiapetrova     919   0.0  0.1 408244816   7200   ??  S    10:09PM   0:00.06 /usr/libexec/naturallanguaged
+kseniiapetrova     918   0.0  0.4 408408032  35088   ??  S    10:09PM   0:00.48 /System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell
+kseniiapetrova     917   0.0  0.4 497227792  34288   ??  Ss   10:09PM   0:00.07 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     916   0.0  0.2 412712912  14832   ??  S    10:08PM   0:00.14 /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Sup
+kseniiapetrova     915   0.0  0.0 408197184   4000   ??  Ss   10:08PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.au
+kseniiapetrova     913   0.0  0.3 413147536  26144   ??  Ss   10:08PM   0:00.29 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     912   0.0  0.1 408264224   8400   ??  S    10:08PM   0:00.10 /System/Library/PrivateFrameworks/Synapse.framework/Support/contentlinking
+kseniiapetrova     911   0.0  0.1 408269776   8896   ??  S    10:08PM   0:00.09 /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.S
+kseniiapetrova     900   0.0  0.1 408197360  11760   ??  Ss   10:08PM   0:00.08 /System/Library/PrivateFrameworks/IDSBlastDoorSupport.framework/Versions/A
+kseniiapetrova     879   0.0  0.2 408234880  16336   ??  S    10:07PM   0:00.24 cloudphotod
+root               874   0.0  0.1 408094800   7552   ??  Ss   10:07PM   0:00.02 /System/Library/CoreServices/Applications/Feedback Assistant.app/Contents/
+kseniiapetrova     872   0.0  0.2 409646320  14592   ??  S    10:07PM   0:00.09 /usr/libexec/betaenrollmentd
+kseniiapetrova     864   0.0  0.2 408095328  12704   ??  S    10:07PM   0:00.05 /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Versions/A/Suppo
+kseniiapetrova     863   0.0  0.2 408260480  20624   ??  S    10:07PM   0:00.22 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/media
+kseniiapetrova     860   0.0  0.4 408321136  31040   ??  S    10:07PM   0:00.65 /usr/libexec/studentd
+kseniiapetrova     858   0.0  0.3 408291904  22816   ??  S    10:07PM   0:00.82 /System/Library/CoreServices/Family.app/Contents/MacOS/Family
+kseniiapetrova     855   0.0  0.1 408265120   7216   ??  S    10:07PM   0:00.09 /System/Library/CoreServices/ScopedBookmarkAgent
+kseniiapetrova     854   0.0  0.3 408266064  25136   ??  S    10:07PM   0:00.37 /usr/libexec/searchpartyuseragent
+kseniiapetrova     853   0.0  0.3 408272528  21520   ??  S    10:07PM   0:00.38 /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/Versions/
+kseniiapetrova     851   0.0  0.2 408264880  16544   ??  S    10:07PM   0:00.07 /System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/
+kseniiapetrova     850   0.0  0.2 408272688  17920   ??  S    10:07PM   0:00.60 /System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/XPCServices/
+kseniiapetrova     843   0.0  0.0 408066176   2592   ??  Ss   10:07PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLi
+kseniiapetrova     839   0.0  0.2 408745152  18512   ??  Ss   10:07PM   0:00.04 /System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/Qu
+kseniiapetrova     837   0.0  0.6 408924384  49120   ??  Ss   10:07PM   0:00.65 /System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/com.app
+kseniiapetrova     836   0.0  7.3 516010656 611920   ??  Ss   10:07PM   0:10.24 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     835   0.0  0.1 408391440   6672   ??  S    10:07PM   0:00.05 /System/Cryptexes/App/usr/libexec/webpushd --machServiceName com.apple.web
+kseniiapetrova     833   0.0  0.2 408245936  19616   ??  S    10:07PM   0:00.09 /System/Cryptexes/App/usr/libexec/SafariLaunchAgent
+kseniiapetrova     834   0.0  0.3 408743856  25200   ??  Ss   10:07PM   0:00.07 /System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Conte
+kseniiapetrova     831   0.0  0.1 408227424  10192   ??  S    10:07PM   0:00.08 /System/Cryptexes/App/usr/libexec/PasswordBreachAgent
+kseniiapetrova     832   0.0  0.1 408370432   7584   ??  Ss   10:07PM   0:00.08 /System/Library/Frameworks/ImageIO.framework/Versions/A/XPCServices/ImageI
+kseniiapetrova     830   0.0  0.2 408264240  13456   ??  S    10:07PM   0:00.42 /System/Library/PrivateFrameworks/Translation.framework/translationd
+kseniiapetrova     829   0.0  0.3 408429616  26832   ??  S    10:07PM   0:00.42 /System/Cryptexes/App/System/Library/CoreServices/SafariSupport.bundle/Con
+kseniiapetrova     828   0.0  0.1 408332352   4240   ??  Ss   10:07PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.au
+kseniiapetrova     827   0.0  1.0 413733600  80992   ??  Ss   10:07PM   0:05.43 /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.app
+kseniiapetrova     826   0.0  0.3 408269296  26736   ??  S    10:07PM   0:00.47 /System/Library/PrivateFrameworks/PassKitCore.framework/passd
+root               825   0.0  0.0 408215632   1968   ??  Ss   10:07PM   0:00.04 /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer
+kseniiapetrova     823   0.0  0.3 409848224  26416   ??  S    10:07PM   0:00.43 /System/Cryptexes/App/usr/libexec/com.apple.Safari.History
+kseniiapetrova     822   0.0  1.8 414853792 150992   ??  S    10:07PM   0:12.08 /System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Conte
+_softwareupdate    821   0.0  0.0 408496336   1968   ??  S    10:07PM   0:00.01 /System/Library/PrivateFrameworks/Install.framework/Frameworks/Distributio
+kseniiapetrova     820   0.0  0.1 408227792   9584   ??  S    10:07PM   0:00.10 /usr/libexec/diagnosticextensionsd
+kseniiapetrova     819   0.0  0.2 408269984  15728   ??  S    10:07PM   0:00.18 /usr/libexec/adprivacyd
+kseniiapetrova     818   0.0  0.1 408228016  10112   ??  S    10:07PM   0:00.10 /System/Library/PrivateFrameworks/WeatherDaemon.framework/weatherd
+kseniiapetrova     812   0.0  0.0 408225856   3312   ??  S    10:07PM   0:00.04 /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServ
+kseniiapetrova     810   0.0  0.4 412872320  30960   ??  Ss   10:07PM   0:01.12 /System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/XPCSer
+_softwareupdate    808   0.0  0.0 408197152   1808   ??  S    10:07PM   0:00.05 /usr/sbin/cfprefsd agent
+_softwareupdate    806   0.0  0.0 408199232   2096   ??  S    10:07PM   0:00.04 /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServ
+_softwareupdate    804   0.0  0.3 412871168  27840   ??  Ss   10:07PM   0:01.05 /System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/XPCSer
+root               795   0.0  0.0 408188416   2560   ??  Ss   10:07PM   0:00.01 /System/Library/CoreServices/CrashReporterSupportHelper server-init
+root               793   0.0  0.1 408820320   6368   ??  Ss   10:07PM   0:00.09 /private/var/db/com.apple.xpc.roleaccountd.staging/exec/16777233.2342620.x
+kseniiapetrova     779   0.0  0.1 408231168   9536   ??  Ss   10:07PM   0:00.12 /System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServi
+_softwareupdate    791   0.0  0.1 408232976   9824   ??  Ss   10:07PM   0:00.13 /usr/libexec/NRDUpdated
+kseniiapetrova     790   0.0  0.0 408065520   2544   ??  S    10:07PM   0:00.02 /System/Library/PrivateFrameworks/IASUtilities.framework/Versions/A/Resour
+kseniiapetrova     777   0.0  0.0 408066128   2688   ??  Ss   10:07PM   0:00.04 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.au
+kseniiapetrova     789   0.0  0.3 408301856  25696   ??  Ss   10:07PM   0:00.16 /System/Applications/Calendar.app/Contents/PlugIns/CalendarWidgetExtension
+kseniiapetrova     788   0.0  0.1 408097056   5472   ??  S    10:07PM   0:00.02 /System/Library/PrivateFrameworks/NewDeviceOutreach.framework/ndoagent
+kseniiapetrova     787   0.0  0.2 408141056  20832   ??  Ss   10:07PM   0:00.03 /System/Applications/Messages.app/Contents/Extensions/MessagesActionExtens
+kseniiapetrova     786   0.0  0.2 408272112  17664   ??  Ss   10:07PM   0:00.04 /System/Applications/Mail.app/Contents/Extensions/MailShortcutsExtension.a
+kseniiapetrova     785   0.0  0.1 408272336  11792   ??  Ss   10:07PM   0:00.04 /System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Conte
+kseniiapetrova     784   0.0  0.2 408123632  13872   ??  Ss   10:07PM   0:00.04 /System/Applications/Calendar.app/Contents/Extensions/CalendarFocusConfigu
+kseniiapetrova     783   0.0  0.1 408234592   5824   ??  Ss   10:07PM   0:00.02 /System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCSer
+kseniiapetrova     781   0.0  0.1 408267840  11408   ??  S    10:07PM   0:00.29 /System/Library/Frameworks/ClassKit.framework/Versions/A/progressd
+root               780   0.0  0.2 408066928  12592   ??  Ss   10:07PM   0:00.08 /System/Library/PrivateFrameworks/SiriInference.framework/Support/siriinfe
+kseniiapetrova     778   0.0  0.3 408408928  23376   ??  S    10:07PM   0:01.02 /System/Library/PrivateFrameworks/SoftwareUpdate.framework/Resources/Softw
+kseniiapetrova     776   0.0  0.2 408237504  19120   ??  SN   10:07PM   0:02.65 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+_driverkit         775   0.0  0.0 408498944    992   ??  Ss   10:07PM   0:00.01 /System/Library/DriverExtensions/IOUserBluetoothSerialDriver.dext/IOUserBl
+kseniiapetrova     773   0.0  0.2 408217488  14672   ??  S    10:07PM   0:00.21 /usr/libexec/promotedcontentd
+kseniiapetrova     771   0.0  0.1 408227936   5968   ??  S    10:07PM   0:00.59 /Library/Apple/System/Library/CoreServices/XProtect.app/Contents/XPCServic
+root               769   0.0  0.1 408232464   8592   ??  Ss   10:07PM   0:00.06 /System/Library/PrivateFrameworks/CoreAccessories.framework/Support/access
+root               766   0.0  0.1 408197760   4416   ??  Ss   10:07PM   0:00.04 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/Versions/A/XPCS
+_installcoordinationd   764   0.0  0.1 408197376   5776   ??  Ss   10:07PM   0:00.06 /System/Library/PrivateFrameworks/InstallCoordination.framework/Support/in
+kseniiapetrova     761   0.0  0.2 408198208  12784   ??  S    10:07PM   0:00.09 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resourc
+root               762   0.0  0.1 408066096   4624   ??  Ss   10:07PM   0:00.03 /System/Library/PrivateFrameworks/PackageKit.framework/Resources/installd
+root               760   0.0  0.1 408066096   5136   ??  Ss   10:07PM   0:00.03 /System/Library/PrivateFrameworks/PackageKit.framework/Resources/system_in
+root               759   0.0  0.1 408227600  10800   ??  Ss   10:07PM   0:00.12 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd 
+kseniiapetrova     758   0.0  0.3 408268192  27296   ??  S    10:07PM   0:00.64 /System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstor
+kseniiapetrova     757   0.0  0.1 408196608   5600   ??  S    10:07PM   0:00.02 /System/Library/PrivateFrameworks/GeoServices.framework/geodMachServiceBri
+kseniiapetrova     653   0.0  0.1 408228384   8432   ??  S    10:07PM   0:00.13 /System/Library/CoreServices/diagnostics_agent
+kseniiapetrova     738   0.0  0.1 408227440   8960   ??  S    10:07PM   0:00.18 /System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/Usage
+kseniiapetrova     696   0.0  0.1 408230464   9728   ??  S    10:07PM   0:00.12 /System/Library/PrivateFrameworks/CoreParsec.framework/parsec-fbf
+kseniiapetrova     641   0.0  0.2 408238352  18416   ??  S    10:07PM   0:01.80 /System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassets
+root               756   0.0  0.0 408076336   2784   ??  Ss   10:07PM   0:00.02 /System/Library/PrivateFrameworks/CacheDelete.framework/deleted_helper
+root               752   0.0  0.1 408227920   5232   ??  Ss   10:07PM   0:00.66 /Library/Apple/System/Library/CoreServices/XProtect.app/Contents/XPCServic
+_applepay          751   0.0  0.0 408168944   1792   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               740   0.0  0.1 408953936   9264   ??  Ss   10:07PM   0:00.14 /private/var/db/com.apple.xpc.roleaccountd.staging/exec/16777233.2739422.x
+kseniiapetrova     743   0.0  0.2 408272832  15584   ??  S    10:07PM   0:01.35 /System/Library/PrivateFrameworks/CacheDelete.framework/deleted
+kseniiapetrova     747   0.0  0.1 408197200   5968   ??  S    10:07PM   0:00.10 /usr/libexec/gamecontrolleragentd
+_gamecontrollerd   745   0.0  0.0 408168944   1792   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               741   0.0  0.0 408228112   3920   ??  Ss   10:07PM   0:00.22 /usr/libexec/xpcroleaccountd -launchd
+_accessoryupdater   739   0.0  0.0 408168944   1776   ??  S    10:07PM   0:00.06 /usr/sbin/distnoted agent
+kseniiapetrova     737   0.0  0.2 408372496  16464   ??  S    10:07PM   0:00.11 /System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServi
+_assetcache        736   0.0  0.0 408168944   1824   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+kseniiapetrova     735   0.0  0.1 408233728   7360   ??  S    10:07PM   0:00.03 /System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Suppor
+kseniiapetrova     734   0.0  0.2 408271600  19840   ??  S    10:07PM   0:00.50 /System/Library/PrivateFrameworks/ContactsDonation.framework/Versions/A/Su
+root               733   0.0  0.1 408134064   6208   ??  S    10:07PM   0:00.03 /usr/sbin/systemstats --logger-helper /private/var/db/systemstats
+_applepay          732   0.0  0.1 408269968   9504   ??  Ss   10:07PM   0:00.43 /usr/libexec/nfcd
+kseniiapetrova     731   0.0  0.1 408236272  10544   ??  S    10:07PM   0:00.53 /usr/libexec/biomesyncd
+kseniiapetrova     730   0.0  0.4 409382352  31696   ??  S    10:07PM   0:00.17 /System/Library/CoreServices/UIKitSystem.app/Contents/MacOS/UIKitSystem sy
+kseniiapetrova     729   0.0  0.2 408234928  14224   ??  Ss   10:07PM   0:00.29 /System/Library/PrivateFrameworks/iCloudDriveService.framework/XPCServices
+kseniiapetrova     728   0.0  0.1 408095696   8432   ??  S    10:07PM   0:00.05 /usr/sbin/BTLEServerAgent
+kseniiapetrova     558   0.0  0.1 408066768   4576   ??  S    10:07PM   0:00.03 /System/Library/PrivateFrameworks/CloudServices.framework/Helpers/com.appl
+root               727   0.0  0.1 408228784   8688   ??  Ss   10:07PM   0:00.22 /usr/libexec/rtcreportingd
+kseniiapetrova     648   0.0  0.2 408260528  14896   ??  S    10:07PM   0:00.14 /System/Library/PrivateFrameworks/AskPermission.framework/Versions/A/Resou
+kseniiapetrova     656   0.0  0.3 408281200  27072   ??  S    10:07PM   0:00.65 /usr/libexec/remindd
+kseniiapetrova     580   0.0  0.3 408267824  23376   ??  S    10:07PM   0:01.14 /System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/Cont
+kseniiapetrova     725   0.0  0.2 408269856  20096   ??  S    10:07PM   0:02.15 /System/Library/CoreServices/UniversalControl.app/Contents/MacOS/Universal
+kseniiapetrova     726   0.0  0.1 408562464   8448   ??  S    10:07PM   0:00.05 /usr/libexec/SidecarRelay
+kseniiapetrova     724   0.0  0.2 408269328  14016   ??  S    10:07PM   0:00.17 /System/Library/CoreServices/mapspushd
+kseniiapetrova     723   0.0  0.2 408269344  14480   ??  S    10:07PM   0:00.43 /System/Library/PrivateFrameworks/FinanceKit.framework/financed
+kseniiapetrova     722   0.0  0.1 408123200   7728   ??  S    10:07PM   0:00.06 /System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAg
+kseniiapetrova     721   0.0  0.3 412729536  21456   ??  S    10:07PM   0:00.58 /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengage
+kseniiapetrova     657   0.0  0.2 408269680  19248   ??  S    10:07PM   0:00.39 /System/Library/PrivateFrameworks/AppleMediaServices.framework/Resources/a
+kseniiapetrova     720   0.0  0.2 408265584  18368   ??  S    10:07PM   0:00.20 /System/Library/PrivateFrameworks/EmailDaemon.framework/Versions/A/maild
+kseniiapetrova     719   0.0  0.2 408273072  20400   ??  S    10:07PM   0:00.49 /System/Library/PrivateFrameworks/iCloudNotification.framework/iCloudNotif
+root               718   0.0  0.1 408269024   5264   ??  Ss   10:07PM   0:00.04 /System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/X
+_assetcache        717   0.0  0.1 408266176   7184   ??  Ss   10:07PM   0:00.06 /usr/libexec/AssetCache/AssetCache
+kseniiapetrova     716   0.0  0.1 408235088  10560   ??  S    10:07PM   0:00.04 /usr/libexec/seserviced
+kseniiapetrova     715   0.0  0.1 408233856   7696   ??  S    10:07PM   0:00.03 /System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKe
+kseniiapetrova     713   0.0  0.3 408287392  21008   ??  S    10:07PM   0:00.14 /System/Library/CoreServices/Keychain Circle Notification.app/Contents/Mac
+kseniiapetrova     712   0.0  0.1 408263808   9904   ??  S    10:07PM   0:00.03 /System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Helpers/
+kseniiapetrova     711   0.0  0.1 408269472   8928   ??  S    10:07PM   0:00.08 /System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/
+kseniiapetrova     710   0.0  0.2 408271680  12672   ??  S    10:07PM   0:00.16 /usr/libexec/neagent
+kseniiapetrova     709   0.0  0.3 408274080  23600   ??  S    10:07PM   0:00.38 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resourc
+kseniiapetrova     708   0.0  0.6 408323872  50784   ??  Ss   10:07PM   0:00.40 /System/Library/CoreServices/Screen Time.app/Contents/PlugIns/ScreenTimeWi
+kseniiapetrova     707   0.0  0.6 408504480  49984   ??  Ss   10:07PM   0:00.35 /System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Cont
+_netbios           706   0.0  0.1 408226240   4672   ??  SNs  10:07PM   0:00.09 /usr/sbin/netbiosd
+kseniiapetrova     705   0.0  0.2 409118720  18032   ??  S    10:07PM   0:00.37 /usr/libexec/avconferenced
+kseniiapetrova     704   0.0  0.1 408077808   4640   ??  S    10:07PM   0:00.02 /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremot
+kseniiapetrova     703   0.0  0.2 408269584  13280   ??  S    10:07PM   0:00.36 /System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent
+kseniiapetrova     702   0.0  0.1 408263472   9936   ??  S    10:07PM   0:00.14 /System/Library/PrivateFrameworks/CoreCDP.framework/Versions/A/Resources/c
+kseniiapetrova     701   0.0  0.1 408661216   9920   ??  Ss   10:07PM   0:00.09 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/XPCServices
+kseniiapetrova     700   0.0  0.2 408271680  18656   ??  S    10:07PM   0:00.26 /usr/libexec/fmfd
+root               699   0.0  0.1 409216112   4224   ??  Ss   10:07PM   0:00.03 /System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/X
+_captiveagent      698   0.0  0.0 408234816   3936   ??  Ss   10:07PM   0:00.05 /usr/libexec/captiveagent
+root               697   0.0  0.1 408247712   8352   ??  Ss   10:07PM   0:00.09 /usr/libexec/wifivelocityd
+kseniiapetrova     695   0.0  0.2 408271744  19552   ??  S    10:07PM   0:00.24 /System/Library/PrivateFrameworks/iTunesCloud.framework/Support/itunesclou
+kseniiapetrova     694   0.0  0.1 408225360   4240   ??  S    10:07PM   0:00.04 /usr/libexec/WiFiVelocityAgent
+kseniiapetrova     693   0.0  0.1 408265072  11552   ??  S    10:07PM   0:00.66 /usr/libexec/triald
+root               692   0.0  0.1 408286192  11808   ??  Ss   10:07PM   0:00.16 /System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon
+kseniiapetrova     691   0.0  0.2 409768784  18192   ??  S    10:07PM   0:00.15 /System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSOAgent.app
+kseniiapetrova     690   0.0  0.2 408272976  15696   ??  S    10:07PM   0:00.31 /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServ
+kseniiapetrova     688   0.0  0.2 408133904  12640   ??  Ss   10:07PM   0:00.40 /System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/
+kseniiapetrova     689   0.0  0.3 408271968  21408   ??  S    10:07PM   0:00.26 /System/Library/PrivateFrameworks/CoreParsec.framework/parsecd
+kseniiapetrova     687   0.0  0.5 408486288  41296   ??  S    10:07PM   0:01.91 /System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed
+kseniiapetrova     682   0.0  0.2 408527120  13120   ??  Ss   10:07PM   0:00.08 /System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/
+kseniiapetrova     686   0.0  0.2 409112832  14880   ??  S    10:07PM   0:00.06 /System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreSe
+kseniiapetrova     685   0.0  0.1 408233536   9216   ??  S    10:07PM   0:00.06 /usr/libexec/findmydevice-user-agent
+_fpsd              684   0.0  0.1 408088528   4848   ??  Ss   10:07PM   0:00.21 /System/Library/PrivateFrameworks/CoreADI.framework/adid
+kseniiapetrova     683   0.0  0.2 408293040  14656   ??  Ss   10:07PM   0:00.11 /System/Library/Input Methods/PressAndHold.app/Contents/PlugIns/PAH_Extens
+kseniiapetrova     681   0.0  1.9 410231376 158464   ??  S    10:07PM   0:02.95 /System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight
+kseniiapetrova     679   0.0  0.1 408266896  12288   ??  S    10:07PM   0:00.20 /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd
+kseniiapetrova     680   0.0  0.2 408279280  13328   ??  Ss   10:07PM   0:00.04 /System/Applications/Home.app/Contents/PlugIns/HomeWidget.appex/Contents/M
+kseniiapetrova     678   0.0  0.2 408275312  16976   ??  S    10:07PM   0:00.25 /System/Library/PrivateFrameworks/FamilyCircle.framework/Versions/A/Resour
+root               677   0.0  0.0 408085216   1776   ??  Ss   10:07PM   0:00.05 /usr/libexec/sysmond
+kseniiapetrova     676   0.0  0.1 408234592   5584   ??  Ss   10:07PM   0:00.02 /System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCSer
+kseniiapetrova     675   0.0  0.2 408394368  18064   ??  S    10:07PM   0:00.29 /System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent
+_nearbyd           674   0.0  0.2 408272304  13248   ??  Ss   10:07PM   0:00.22 /usr/libexec/nearbyd
+kseniiapetrova     673   0.0  0.1 408103072   4496   ??  S    10:07PM   0:00.03 /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Framew
+kseniiapetrova     672   0.0  0.3 408271344  21744   ??  S    10:07PM   0:00.41 /System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMD
+_ctkd              671   0.0  0.0 408234160   2640   ??  Ss   10:07PM   0:00.03 /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -s
+kseniiapetrova     670   0.0  0.1 408264240  10464   ??  S    10:07PM   0:00.06 /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd
+kseniiapetrova     669   0.0  0.2 408272816  17136   ??  S    10:07PM   0:00.24 /usr/libexec/transparencyd
+_cmiodalassistants   668   0.0  0.0 408246368   3904   ??  S    10:07PM   0:00.06 /usr/libexec/containermanagerd --runmode=agent --user-container-mode=curre
+_cmiodalassistants   667   0.0  0.1 408266384   5984   ??  S    10:07PM   0:00.11 /usr/libexec/trustd --agent
+kseniiapetrova     666   0.0  0.1 408141216   7968   ??  S    10:07PM   0:00.08 /System/Library/CoreServices/pbs
+_cmiodalassistants   665   0.0  0.0 408225824   1952   ??  S    10:07PM   0:00.05 /usr/sbin/cfprefsd agent
+kseniiapetrova     664   0.0  0.1 408264304   5728   ??  S    10:07PM   0:00.07 /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -tw
+kseniiapetrova     663   0.0  0.1 408286320  11424   ??  S    10:07PM   0:00.05 /System/Library/CoreServices/TextInputSwitcher.app/Contents/MacOS/TextInpu
+kseniiapetrova     660   0.0  0.0 408233616   4064   ??  S    10:07PM   0:00.04 /System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents
+kseniiapetrova     662   0.0  0.3 408785264  22256   ??  S    10:07PM   0:00.35 /System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.app
+kseniiapetrova     652   0.0  0.3 408267344  25232   ??  S    10:07PM   0:00.28 /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/Ma
+kseniiapetrova     654   0.0  0.1 408132496   8016   ??  S    10:07PM   0:00.07 /usr/libexec/bluetoothuserd
+kseniiapetrova     639   0.0  0.3 408272432  24912   ??  S    10:07PM   0:00.36 /System/Library/PrivateFrameworks/HearingCore.framework/heard
+kseniiapetrova     647   0.0  0.1 408264064   5616   ??  S    10:07PM   0:00.08 /System/Library/Image Capture/Support/icdd
+kseniiapetrova     659   0.0  0.1 408103248   5344   ??  S    10:07PM   0:00.02 /System/Library/CoreServices/ReportCrash agent
+kseniiapetrova     645   0.0  0.1 408134448   8928   ??  S    10:07PM   0:00.05 /System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchage
+kseniiapetrova     640   0.0  0.2 408277072  19584   ??  S    10:07PM   0:00.15 /System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd
+kseniiapetrova     631   0.0  0.2 408276288  18272   ??  S    10:07PM   0:01.19 /System/Library/PrivateFrameworks/ScreenTimeCore.framework/Versions/A/Scre
+kseniiapetrova     644   0.0  0.5 409820512  43472   ??  S    10:07PM   0:00.57 /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/Notific
+kseniiapetrova     655   0.0  0.3 409546640  28272   ??  S    10:07PM   0:00.27 /System/Library/CoreServices/TextInputMenuAgent.app/Contents/MacOS/TextInp
+kseniiapetrova     651   0.0  0.1 409137344  12336   ??  S    10:07PM   0:00.05 /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAg
+root               636   0.0  0.2 408264464  12832   ??  Ss   10:07PM   0:00.09 /usr/libexec/wifianalyticsd
+root               633   0.0  0.1 408225392   4256   ??  Ss   10:07PM   0:00.03 /System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents
+_oahd              638   0.0  0.0 408524912   2096   ??  Ss   10:07PM   0:00.02 /usr/libexec/rosetta/oahd
+kseniiapetrova     637   0.0  0.0 34028264   2440   ??  Ss   10:07PM   0:00.55 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/CarbonCompon
+kseniiapetrova     635   0.0  0.1 408533184  11888   ??  S    10:07PM   0:00.11 /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/Trust
+kseniiapetrova     634   0.0  0.2 408270448  13312   ??  S    10:07PM   0:00.30 /System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdef
+kseniiapetrova     632   0.0  0.1 408263856   8400   ??  S    10:07PM   0:00.09 /System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar
+kseniiapetrova     628   0.0  0.1 408287488  10656   ??  S    10:07PM   0:00.56 /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Framew
+kseniiapetrova     629   0.0  0.2 408271056  14544   ??  S    10:07PM   0:00.16 /System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistor
+kseniiapetrova     627   0.0  0.3 408271312  24512   ??  S    10:07PM   0:05.28 /System/Library/Frameworks/Contacts.framework/Support/contactsd
+kseniiapetrova     626   0.0  0.1 408264880  10560   ??  S    10:07PM   0:00.56 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.fr
+kseniiapetrova     624   0.0  0.4 408476592  33152   ??  S    10:07PM   0:02.51 /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Sup
+kseniiapetrova     619   0.0  0.1 408265024  11168   ??  S    10:07PM   0:00.13 /System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivi
+kseniiapetrova     623   0.0  0.4 408280064  33344   ??  S    10:07PM   0:00.67 /System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservice
+kseniiapetrova     622   0.0  0.2 408263952  17248   ??  S    10:07PM   0:00.08 /System/Library/PrivateFrameworks/SocialLayer.framework/sociallayerd.app/C
+kseniiapetrova     621   0.0  0.1 408234640  11584   ??  S    10:07PM   0:00.05 /usr/libexec/replayd
+kseniiapetrova     620   0.0  0.4 408783568  37552   ??  Ss   10:07PM   0:00.35 /System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.
+kseniiapetrova     617   0.0  0.4 408289504  35600   ??  S    10:07PM   0:04.00 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+kseniiapetrova     618   0.0  0.1 408263808   6912   ??  S    10:07PM   0:00.11 /System/Library/PrivateFrameworks/BiomeStreams.framework/Support/BiomeAgen
+kseniiapetrova     615   0.0  0.5 408293648  37952   ??  S    10:07PM   0:01.16 /System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Cont
+kseniiapetrova     610   0.0  0.2 408276640  15168   ??  S    10:07PM   0:00.17 /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileprovi
+kseniiapetrova     614   0.0  0.1 408273440  10496   ??  S    10:07PM   0:00.06 /System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/
+kseniiapetrova     613   0.0  0.2 408267168  14144   ??  S    10:07PM   0:00.14 /System/Library/CoreServices/sharedfilelistd
+root               612   0.0  0.1 408104176   4320   ??  Ss   10:07PM   0:00.02 automountd
+kseniiapetrova     611   0.0  0.2 408281088  16864   ??  S    10:07PM   0:00.32 /System/Library/CoreServices/iconservicesagent
+kseniiapetrova     605   0.0  0.2 408264752  16480   ??  S    10:07PM   0:00.11 /usr/libexec/siriknowledged
+_appleevents       600   0.0  0.0 408168944   1936   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               604   0.0  0.1 408264304  10224   ??  Ss   10:07PM   0:00.22 /usr/sbin/WirelessRadioManagerd
+kseniiapetrova     609   0.0  0.6 408318416  52832   ??  S    10:07PM   0:03.56 /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+kseniiapetrova     608   0.0  0.1 408265936   9952   ??  S    10:07PM   0:00.08 /System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServi
+kseniiapetrova     602   0.0  0.1 408264080   9232   ??  S    10:07PM   0:00.06 /System/Library/PrivateFrameworks/MobileTimer.framework/Executables/mobile
+kseniiapetrova     606   0.0  0.3 408270960  23280   ??  S    10:07PM   0:00.43 /System/Library/PrivateFrameworks/DoNotDisturbServer.framework/Support/don
+kseniiapetrova     607   0.0  0.3 408271984  23728   ??  S    10:07PM   0:00.67 /System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calacce
+kseniiapetrova     599   0.0  0.2 408266752  13344   ??  S    10:07PM   0:00.28 /usr/libexec/linkd
+kseniiapetrova     597   0.0  0.6 408914256  46976   ??  S    10:07PM   0:01.42 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+kseniiapetrova     598   0.0  0.1 408264592   9120   ??  S    10:07PM   0:00.68 /usr/libexec/swcd
+kseniiapetrova     596   0.0  0.2 408265056  13024   ??  S    10:07PM   0:00.17 /usr/libexec/networkserviceproxy
+kseniiapetrova     593   0.0  0.2 408391952  15392   ??  S    10:07PM   0:00.08 /System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLoca
+kseniiapetrova     594   0.0  0.3 408275664  25776   ??  S    10:07PM   0:00.34 /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/S
+kseniiapetrova     595   0.0  0.3 408415888  26688   ??  S    10:07PM   0:00.34 /System/Library/PrivateFrameworks/VoiceShortcuts.framework/Versions/A/Supp
+root               603   0.0  0.1 408242192  10256   ??  Ss   10:07PM   0:00.08 /usr/sbin/filecoordinationd
+kseniiapetrova     601   0.0  0.1 408233968   7856   ??  S    10:07PM   0:00.07 /usr/libexec/pboard
+kseniiapetrova     584   0.0  0.2 408269424  12736   ??  S    10:07PM   0:00.16 /usr/libexec/dmd
+kseniiapetrova     588   0.0  0.3 408274880  21408   ??  S    10:07PM   0:00.73 /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/Versions/A/Sup
+kseniiapetrova     591   0.0  0.2 408272992  15952   ??  S    10:07PM   0:01.93 /System/Library/PrivateFrameworks/TCC.framework/Support/tccd
+root              1142   0.0  0.0 408102544   1616 s005  R+   10:16PM   0:00.00 ps aux
+kseniiapetrova     592   0.0  0.2 408271840  14416   ??  S    10:07PM   0:00.43 /usr/libexec/pkd
+root               585   0.0  0.1 408095680   7760   ??  Ss   10:07PM   0:00.03 /usr/sbin/BTLEServer
+kseniiapetrova     590   0.0  0.2 408351424  14400   ??  S    10:07PM   0:03.74 /usr/libexec/trustd --agent
+kseniiapetrova     573   0.0  0.1 408264512   9696   ??  S    10:07PM   0:00.16 /System/Library/CoreServices/lockoutagent
+kseniiapetrova     571   0.0  0.1 408094816   5648   ??  S    10:07PM   0:00.02 /System/Library/CoreServices/APFSUserAgent
+kseniiapetrova     581   0.0  0.2 408267360  18960   ??  S    10:07PM   0:00.29 /usr/libexec/ContinuityCaptureAgent
+kseniiapetrova     576   0.0  0.3 408280240  26784   ??  S    10:07PM   0:00.90 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+kseniiapetrova     587   0.0  0.1 408272624  10720   ??  S    10:07PM   0:00.30 /usr/libexec/secinitd
+kseniiapetrova     575   0.0  0.2 408274256  19360   ??  S    10:07PM   0:00.38 /usr/sbin/usernoted
+kseniiapetrova     574   0.0  0.2 408266144  19296   ??  S    10:07PM   0:00.50 /usr/libexec/rapportd
+kseniiapetrova     577   0.0  0.2 408475760  19088   ??  S    10:07PM   0:01.87 /usr/libexec/secd
+kseniiapetrova     572   0.0  0.2 408284560  19376   ??  S    10:07PM   0:00.98 /usr/libexec/nsurlsessiond
+kseniiapetrova     586   0.0  0.0 408102944   3312   ??  S    10:07PM   0:00.01 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Ca
+kseniiapetrova     583   0.0  0.2 408743104  18240   ??  Ss   10:07PM   0:00.04 /System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/Qu
+root               578   0.0  0.1 408263568   6720   ??  Ss   10:07PM   0:00.06 /usr/libexec/mobileactivationd
+kseniiapetrova     570   0.0  0.3 408276736  25600   ??  S    10:07PM   0:00.20 /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter -L
+root               579   0.0  0.1 408276672   8704   ??  Ss   10:07PM   0:00.05 /usr/sbin/systemsoundserverd
+kseniiapetrova     582   0.0  0.1 408263776   8352   ??  S    10:07PM   0:00.86 /usr/libexec/containermanagerd --runmode=agent --user-container-mode=curre
+kseniiapetrova     563   0.0  0.2 408274608  19840   ??  S    10:07PM   0:00.48 /usr/libexec/lsd
+_cmiodalassistants   559   0.0  0.1 408256608   5184   ??  S    10:07PM   0:00.05 /usr/libexec/secinitd
+root               562   0.0  0.1 408239504  12128   ??  Ss   10:07PM   0:00.09 /usr/libexec/findmydeviced
+kseniiapetrova     561   0.0  0.1 408287008  11840   ??  S    10:07PM   0:00.07 /System/Library/CoreServices/talagent
+kseniiapetrova     567   0.0  0.7 409845616  56880   ??  S    10:07PM   0:02.09 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+kseniiapetrova     566   0.0  0.2 409376368  20656   ??  S    10:07PM   0:00.19 /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUISer
+kseniiapetrova     565   0.0  0.6 409835920  52416   ??  S    10:07PM   0:02.22 /System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCente
+kseniiapetrova     564   0.0  0.6 409758960  49344   ??  S    10:07PM   0:02.64 /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+kseniiapetrova     560   0.0  0.2 409146384  19408   ??  S    10:07PM   0:00.60 /System/Library/CoreServices/WindowManager.app/Contents/MacOS/WindowManage
+kseniiapetrova     552   0.0  0.2 408268784  16320   ??  S    10:07PM   0:00.75 /usr/libexec/UserEventAgent (Aqua)
+kseniiapetrova     556   0.0  0.3 408281552  27264   ??  S    10:07PM   0:00.85 /usr/libexec/knowledge-agent
+kseniiapetrova     557   0.0  0.2 408743040  13968   ??  S    10:07PM   0:00.12 /usr/sbin/universalaccessd launchd -s
+_applepay          554   0.0  0.1 408226688   5728   ??  Ss   10:07PM   0:00.08 /usr/libexec/seld
+_gamecontrollerd   553   0.0  0.1 408227136   7664   ??  Ss   10:07PM   0:00.14 /usr/libexec/gamecontrollerd
+_cmiodalassistants   551   0.0  0.2 408268496  13008   ??  S    10:07PM   0:00.16 /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServ
+_nsurlsessiond     549   0.0  0.0 408168944   1824   ??  S    10:07PM   0:00.06 /usr/sbin/distnoted agent
+root               550   0.0  0.0 408208448   2560   ??  Ss   10:07PM   0:00.04 /System/Library/PrivateFrameworks/CoreKDL.framework/Support/corekdld
+root               395   0.0  0.0 408226368   4128   ??  Ss   10:07PM   0:00.07 /usr/libexec/usbd
+root               361   0.0  0.1 408196768   5648   ??  Ss   10:07PM   0:00.04 /System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-hel
+root               548   0.0  0.1 408231360   6768   ??  Ss   10:07PM   0:00.14 /usr/libexec/symptomsd-diag
+root               547   0.0  0.0 408216688   1840   ??  Ss   10:07PM   0:00.04 /usr/libexec/securityd_service
+kseniiapetrova     546   0.0  0.1 408234832   5696   ??  S    10:07PM   0:02.26 /usr/sbin/cfprefsd agent
+kseniiapetrova     545   0.0  0.1 408169968   4464   ??  S    10:07PM   0:00.74 /usr/sbin/distnoted agent
+root               544   0.0  0.1 408264224   9312   ??  Ss   10:07PM   0:00.05 /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd
+root               507   0.0  0.1 408264560   5248   ??  Ss   10:07PM   0:00.08 /System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Resou
+_spotlight         512   0.0  0.0 408168944   1840   ??  S    10:07PM   0:00.03 /usr/sbin/distnoted agent
+root               511   0.0  0.1 408236528   6160   ??  Ss   10:07PM   0:00.03 /usr/libexec/countryd
+root               504   0.0  0.1 408225936   4976   ??  Ss   10:07PM   0:00.04 /System/Library/Frameworks/GSS.framework/Helpers/GSSCred
+_locationd         503   0.0  0.1 408255584   4496   ??  S    10:07PM   0:00.04 /usr/libexec/containermanagerd --runmode=agent --user-container-mode=curre
+root               502   0.0  0.0 408223104   2848   ??  Ss   10:07PM   0:00.05 /usr/libexec/rpcsvchost -launchd netlogon.bundle
+root               500   0.0  0.7 409578432  57568   ??  Ss   10:07PM   0:03.63 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+_locationd         499   0.0  0.1 408266384   6272   ??  S    10:07PM   0:00.15 /usr/libexec/trustd --agent
+_locationd         498   0.0  0.0 408208416   2160   ??  S    10:07PM   0:00.06 /usr/sbin/cfprefsd agent
+root               497   0.0  0.0 408217664   3824   ??  Ss   10:07PM   0:00.03 /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolic
+root               495   0.0  0.1 408126160   4960   ??  Ss   10:07PM   0:00.05 /System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Versions/
+_locationd         494   0.0  0.1 408246368   4896   ??  S    10:07PM   0:00.05 /usr/libexec/secinitd
+_locationd         492   0.0  0.0 408168944   1856   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+_locationd         491   0.0  0.2 408270544  13808   ??  S    10:07PM   0:00.21 /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServ
+_softwareupdate    486   0.0  0.0 408168944   1856   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               487   0.0  0.1 408235504   6832   ??  Ss   10:07PM   0:00.03 /System/Library/CoreServices/Software Update.app/Contents/Resources/suhelp
+root               485   0.0  0.1 408198784   5600   ??  Ss   10:07PM   0:00.04 /System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd
+root               488   0.0  0.0 408229248   4032   ??  Ss   10:07PM   0:00.04 /usr/sbin/BlueTool -R
+root               472   0.0  0.1 408208624   7552   ??  Ss   10:07PM   0:00.01 /System/Library/PrivateFrameworks/WiFiPolicy.framework/XPCServices/WiFiClo
+root               475   0.0  0.0 408225856   2816   ??  Ss   10:07PM   0:00.01 /System/Library/PrivateFrameworks/AccountPolicy.framework/XPCServices/com.
+_cmiodalassistants   474   0.0  0.1 408266176   7184   ??  Ss   10:07PM   0:00.06 /System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/UVCA
+_cmiodalassistants   473   0.0  0.1 408269376   8368   ??  Ss   10:07PM   0:00.11 /usr/sbin/appleh13camerad
+root               469   0.0  0.2 408174608  14304   ??  Ss   10:07PM   0:00.19 /usr/libexec/wifip2pd
+_softwareupdate    470   0.0  0.4 412724912  37728   ??  Ss   10:07PM   0:06.80 /System/Library/CoreServices/Software Update.app/Contents/Resources/softwa
+root               466   0.0  0.1 408267040   9584   ??  Ss   10:07PM   0:00.19 /usr/libexec/diskmanagementd
+_iconservices      313   0.0  0.1 408264352   5824   ??  Ss   10:07PM   0:00.06 /System/Library/CoreServices/iconservicesd
+root               459   0.0  0.1 408266320   8576   ??  Ss   10:07PM   0:00.25 /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd
+root               462   0.0  0.1 408206864   5360   ??  Ss   10:07PM   0:00.03 /usr/libexec/bootinstalld
+root               457   0.0  0.3 408275056  24640   ??  Ss   10:07PM   0:06.54 /usr/libexec/mobileassetd
+_softwareupdate    306   0.0  0.1 408272336   8848   ??  Ss   10:07PM   0:00.27 /System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/s
+root               456   0.0  0.1 408265568   4704   ??  Ss   10:07PM   0:00.05 /System/Library/Frameworks/SystemExtensions.framework/Versions/A/Helpers/s
+root               455   0.0  0.1 408248144   5552   ??  Ss   10:07PM   0:00.11 /usr/sbin/mDNSResponderHelper
+root               453   0.0  0.0 408525280   2960   ??  Ss   10:07PM   0:00.02 /usr/libexec/cryptexd
+_driverkit         452   0.0  0.0 408505216   1760   ??  Ss   10:07PM   0:00.04 /System/Library/DriverExtensions/com.apple.AppleUserHIDDrivers.dext/com.ap
+root               450   0.0  0.1 408264640   6432   ??  Ss   10:07PM   0:00.14 /usr/libexec/aned
+_driverkit         448   0.0  0.0 408496816    816   ??  Ss   10:07PM   0:00.01 /System/Library/DriverExtensions/com.apple.DriverKit-IOUserDockChannelSeri
+_biome             299   0.0  0.1 408264512  10864   ??  Ss   10:07PM   0:00.38 /System/Library/PrivateFrameworks/BiomeStreams.framework/Support/biomed
+_appleevents       451   0.0  0.1 408264736   6528   ??  Ss   10:07PM   0:00.10 /System/Library/CoreServices/appleeventsd --server
+_coreaudiod        449   0.0  0.1 408197376   4624   ??  Ss   10:07PM   0:00.01 /System/Library/PrivateFrameworks/ZhuGeSupport.framework/Versions/A/XPCSer
+root               447   0.0  0.0 408254560   3968   ??  Ss   10:07PM   0:00.08 /usr/libexec/containermanagerd --runmode=privileged --user-container-mode=
+_cmiodalassistants   445   0.0  0.0 408168944   1776   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               446   0.0  0.1 408067408   5056   ??  Ss   10:07PM   0:00.02 /System/Library/CoreServices/ReportCrash daemon
+_analyticsd        400   0.0  0.2 408266768  14544   ??  Ss   10:07PM   0:01.11 /System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analytic
+root               444   0.0  0.1 408234000   4256   ??  Ss   10:07PM   0:00.16 /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/com.a
+root               443   0.0  0.0 408215024   2880   ??  Ss   10:07PM   0:00.04 /usr/libexec/colorsyncd
+root               441   0.0  0.0 408077344   2288   ??  Ss   10:07PM   0:00.01 /System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.
+root               439   0.0  0.0 408224304   3168   ??  Ss   10:07PM   0:00.02 /usr/libexec/colorsync.displayservices
+_networkd          438   0.0  0.2 408266896  14272   ??  Ss   10:07PM   0:00.52 /usr/libexec/symptomsd
+root               435   0.0  0.1 408248048   6272   ??  Ss   10:07PM   0:00.05 /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/aw
+root               437   0.0  0.0 408084608   1792   ??  Ss   10:07PM   0:00.01 /System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLi
+root               434   0.0  0.1 408693680   4832   ??  Ss   10:07PM   0:00.52 /usr/libexec/audioclocksyncd
+_coreaudiod        433   0.0  0.0 408198208   3632   ??  Ss   10:07PM   0:00.02 /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.au
+root               431   0.0  0.1 408234064   4832   ??  Ss   10:07PM   0:00.06 /System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar 
+_mdnsresponder     428   0.0  0.1 408269136  11744   ??  Ss   10:07PM   0:01.06 /usr/sbin/mDNSResponder
+root               426   0.0  0.1 408227920   4736   ??  Ss   10:07PM   0:00.05 /usr/libexec/secinitd
+_coreaudiod        429   0.0  0.0 408077344   2128   ??  Ss   10:07PM   0:00.01 /System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.
+_windowserver      423   0.0  0.0 408168944   1776   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+root               417   0.0  0.0 408168944   1792   ??  S    10:07PM   0:00.06 /usr/sbin/distnoted agent
+root               401   0.0  0.0 408066080   2048   ??  S    10:07PM   0:00.01 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Ca
+_coreaudiod        424   0.0  0.0 408168944   1792   ??  S    10:07PM   0:00.05 /usr/sbin/distnoted agent
+_nsurlsessiond     385   0.0  0.2 408271744  14192   ??  Ss   10:07PM   0:00.38 /usr/libexec/nsurlsessiond --privileged
+root               418   0.0  0.0 408207984   3392   ??  Ss   10:07PM   0:00.04 /usr/libexec/trustdFileHelper
+_hidd              415   0.0  0.0 408102400   2384   ??  Ss   10:07PM   0:00.02 /usr/libexec/hidd
+_coreaudiod        375   0.0  0.4 409089168  31776   ??  Ss   10:07PM   0:01.53 /usr/sbin/coreaudiod
+root               362   0.0  0.1 408247568  11248   ??  Ss   10:07PM   0:00.10 /usr/libexec/PowerUIAgent
+root               390   0.0  0.2 408269664  20416   ??  Ss   10:07PM   0:03.79 /usr/libexec/airportd
+root               403   0.0  0.1 408264864   9552   ??  Ss   10:07PM   0:00.08 /usr/libexec/biometrickitd --launchd
+root               388   0.0  0.0 408233456   4016   ??  Ss   10:07PM   0:00.04 /System/Library/PrivateFrameworks/SystemStatusServer.framework/Support/sys
+root               397   0.0  0.1 408263936   8912   ??  Ss   10:07PM   0:00.36 /usr/libexec/nehelper
+root               387   0.0  0.0 408102480   3360   ??  Ss   10:07PM   0:00.05 /usr/libexec/apfsd
+_trustd            373   0.0  0.1 408270448  11456   ??  Ss   10:07PM   0:02.04 /usr/libexec/trustd
+root               363   0.0  0.2 408272576  13664   ??  Ss   10:07PM   0:02.40 /usr/libexec/runningboardd
+root               359   0.0  0.2 408282592  17232   ??  Ss   10:07PM   0:00.51 /System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/cont
+root               356   0.0  0.0 408196864   1344   ??  Ss   10:07PM   0:00.03 aslmanager
+root               360   0.0  0.1 408251472   7104   ??  Ss   10:07PM   0:00.21 /System/Library/CoreServices/coreservicesd
+_usbmuxd           327   0.0  0.1 408271952   5632   ??  Ss   10:07PM   0:00.11 /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resour
+root               358   0.0  0.3 408272848  21360   ??  Ss   10:07PM   0:00.60 /usr/libexec/lsd runAsRoot
+_distnote          336   0.0  0.0 408168944   3040   ??  Ss   10:07PM   0:00.33 /usr/sbin/distnoted daemon
+_timed             326   0.0  0.1 408264208   4448   ??  Ss   10:07PM   0:00.06 /usr/libexec/timed
+kseniiapetrova     357   0.0  0.3 409679856  23744   ??  Ss   10:07PM   0:00.84 /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow co
+root               353   0.0  0.3 408309920  25168   ??  Ss   10:07PM   0:05.16 /usr/libexec/syspolicyd
+root               355   0.0  0.2 408273840  18720   ??  Ss   10:07PM   0:02.27 /System/Library/PrivateFrameworks/TCC.framework/Support/tccd system
+root               354   0.0  0.1 408234144   4928   ??  Ss   10:07PM   0:02.29 /usr/sbin/cfprefsd daemon
+root               351   0.0  0.0 408196848   1856   ??  Ss   10:07PM   0:00.10 /usr/libexec/logd_helper
+root               298   0.0  0.0 408197216   3312   ??  Ss   10:07PM   0:00.02 /usr/libexec/IOMFB_bics_daemon
+root               290   0.0  0.3 408275936  22240   ??  Ss   10:07PM   0:00.48 /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremot
+root               318   0.0  0.2 408275952  17488   ??  Ss   10:07PM   0:02.26 /usr/libexec/coreduetd
+root               285   0.0  0.0 408086672   3392   ??  Ss   10:07PM   0:00.02 /usr/libexec/smd
+root               296   0.0  0.0 408057392   1520   ??  Ss   10:07PM   0:00.01 endpointsecurityd
+root               319   0.0  0.0 408226160   1440   ??  Ss   10:07PM   0:00.14 /usr/sbin/syslogd
+root               350   0.0  0.2 408264272  17568   ??  Ss   10:07PM   0:00.10 /System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/com.
+root               325   0.0  0.1 408267200  10848   ??  Ss   10:07PM   0:00.92 /System/Library/CoreServices/launchservicesd
+root               293   0.0  0.1 408266736   9632   ??  Ss   10:07PM   0:00.30 /usr/sbin/systemstats --daemon
+root               339   0.0  0.0 408057856    384   ??  Ss   10:07PM   0:00.02 /usr/libexec/dirhelper
+root               341   0.0  0.0 408228640   4064   ??  Ss   10:07PM   0:00.08 /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A
+root               338   0.0  0.3 408277440  22560   ??  Ss   10:07PM   0:08.48 /usr/libexec/PerfPowerServices
+root               334   0.0  0.2 408266208  15488   ??  Ss   10:07PM   0:01.49 /usr/libexec/dasd
+root               305   0.0  0.0 408196688   2448   ??  Ss   10:07PM   0:00.02 /usr/libexec/keybagd -t 15
+root               308   0.0  0.0 408060016   3216   ??  Ss   10:07PM   0:00.04 /usr/libexec/watchdogd
+root               342   0.0  0.0 408066096   1664   ??  Ss   10:07PM   0:00.01 /usr/sbin/KernelEventAgent
+root               329   0.0  0.0 408057296   1264   ??  Ss   10:07PM   0:00.01 auditd -l
+root               346   0.0  0.0 408233744   2592   ??  Ss   10:07PM   0:01.13 /usr/sbin/notifyd
+root               347   0.0  0.1 408134592   4768   ??  Ss   10:07PM   0:00.03 /usr/libexec/sandboxd
+root               343   0.0  0.1 408954816   6880   ??  Ss   10:07PM   0:00.08 /usr/libexec/usermanagerd -t 15
+root               349   0.0  0.1 408265248  12112   ??  Ss   10:07PM   0:00.20 /usr/libexec/AirPlayXPCHelper
+root               337   0.0  0.0 408078464   2592   ??  Ss   10:07PM   0:00.02 /System/Library/PrivateFrameworks/AppleCredentialManager.framework/AppleCr
+root               333   0.0  0.0 408188960   2400   ??  Ss   10:07PM   0:00.01 autofsd
+root               328   0.0  0.1 408266464   8080   ??  Ss   10:07PM   0:00.53 /usr/sbin/securityd -i
+root               324   0.0  0.2 408348432  15408   ??  Ss   10:07PM   0:01.18 /System/Library/PrivateFrameworks/ApplePushService.framework/apsd
+root               340   0.0  0.1 408102464   4288   ??  Ss   10:07PM   0:00.03 /System/Library/CoreServices/logind
+root               322   0.0  0.1 408226928   4512   ??  Ss   10:07PM   0:00.35 /usr/libexec/thermalmonitord
+root               315   0.0  0.1 408263888   4960   ??  Ss   10:07PM   0:00.27 /usr/libexec/diskarbitrationd
+root               312   0.0  0.5 408539024  45520   ??  Ss   10:07PM   0:05.50 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+root               314   0.0  0.1 408270576  10880   ??  Ss   10:07PM   0:00.88 /usr/libexec/kernelmanagerd
+root               303   0.0  0.1 408255920   4288   ??  Ss   10:07PM   0:00.04 /usr/libexec/remoted
+root               301   0.0  0.1 408265072   7056   ??  Ss   10:07PM   0:00.10 /usr/libexec/amfid
+root               295   0.0  0.1 408268304  12160   ??  Ss   10:07PM   0:01.05 /usr/libexec/configd
+root               289   0.0  0.1 408379984   6208   ??  Ss   10:07PM   0:01.97 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FS
+root               288   0.0  0.0 408057920   3104   ??  Ss   10:07PM   0:00.03 /System/Library/PrivateFrameworks/Uninstall.framework/Resources/uninstalld
+root               286   0.0  0.2 408266560  15952   ??  Ss   10:07PM   0:00.44 /usr/libexec/UserEventAgent (System)
+kseniiapetrova     589   0.0  0.3 408267984  24784   ??  S    10:07PM   0:00.41 /System/Library/CoreServices/cloudpaird
+kseniiapetrova    1131   0.0  0.0 408412144   2832 s005  Ss   10:16PM   0:00.02 /bin/zsh -il
+kseniiapetrova    1089   0.0  0.3 408213696  27680   ??  S    10:15PM   0:00.25 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.fram
+kseniiapetrova    1070   0.0  0.9 1621754304  73152   ??  S    10:15PM   0:00.33 /private/var/folders/rx/85fw3kyd4134n5zhvs3tlyr80000gn/T/AppTranslocation/
+kseniiapetrova    1061   0.0  0.2 408741056  20064   ??  Ss   10:15PM   0:00.03 /System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/Qu
+kseniiapetrova    1060   0.0  1.0 408920368  81424   ??  Ss   10:15PM   0:01.09 /System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/com.app
+kseniiapetrova    1044   0.0  0.5 408949056  40800   ??  Ss   10:14PM   0:00.24 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompi
+kseniiapetrova    1042   0.0  0.2 408968720  12752   ??  Ss   10:14PM   0:00.06 /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/V
+root              1041   0.0  0.2 408967472  13792   ??  Ss   10:14PM   0:00.13 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompi
+kseniiapetrova    1038   0.0  0.1 408058064   4528   ??  S    10:14PM   0:00.02 /usr/libexec/spindump_agent
+root              1039   0.0  0.1 408188512   7248   ??  Ss   10:14PM   0:00.07 /System/Library/CoreServices/SubmitDiagInfo server-init
+root              1037   0.0  0.1 408230144   9968   ??  Ss   10:14PM   0:00.05 /usr/sbin/spindump
+_fpsd             1036   0.0  0.3 408298320  29312   ??  Ss   10:14PM   0:01.09 /System/Library/PrivateFrameworks/CoreLSKD.framework/Versions/A/lskdd
+kseniiapetrova    1033   0.0  0.1 34776608   9652   ??  Ss   10:14PM   0:00.13 /System/Applications/Music.app/Contents/XPCServices/VisualizerService_x86.
+kseniiapetrova    1034   0.0  0.2 409013088  17184   ??  Ss   10:14PM   0:00.04 /System/Applications/Music.app/Contents/XPCServices/VisualizerService.xpc/
+kseniiapetrova    1032   0.0  0.2 408243184  17200   ??  S    10:14PM   0:00.06 /System/Library/PrivateFrameworks/AMPLibrary.framework/Versions/A/Support/
+kseniiapetrova@MacBook-Air-Kseniia Bash training % kill 666
+kseniiapetrova@MacBook-Air-Kseniia Bash training % 
 
-kseniiapetrova@MacBook-Air-Kseniia test3 % kill 666
-kill: kill 666 failed: no such process
 kseniiapetrova@MacBook-Air-Kseniia test3 % ping rusau.net
-
 PING rusau.net (5.181.161.75): 56 data bytes
 64 bytes from 5.181.161.75: icmp_seq=0 ttl=51 time=66.950 ms
 64 bytes from 5.181.161.75: icmp_seq=1 ttl=47 time=83.417 ms
@@ -587,28 +527,24 @@ PING rusau.net (5.181.161.75): 56 data bytes
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 22.580/49.692/76.007/22.587 ms
 
-kseniiapetrova@MacBook-Air-Kseniia bash_training % curl 'https://petstore.swagger.io/pet/findByStatus?status=available,pending,sold'
+kseniiapetrova@MacBook-Air-Kseniia Bash training % curl -X 'GET' 'https://petstore.swagger.io/v2/pet/findByStatus?status=available,sold,pending' -H 'accept: application/json'
 
+[{"id":9223372036854775001,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854775795,"category":{"id":0,"name":"string"},"name":"Chappie007","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":12,"category":{"id":1,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"available"},{"id":9222968140497180179,"category":{"id":0,"name":"string"},"name":"test","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854775799,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":111,"category":{"id":0,"name":"string"},"name":"Tommy_QA","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":5564,"category":{"id":2,"name":"Mascotas amigables"},"name":"Firulays","photoUrls":[],"tags":[{"id":1,"name":"perro de acompañamiento"}],"status":"available"},{"id":5565,"category":{"id":2,"name":"Mascotas amigables"},"name":"Lay","photoUrls":[],"tags":[{"id":1,"name":"perro de acompañamiento"}],"status":"available"},{"id":5567,"category":{"id":2,"name":"Mascotas amigables"},"name":"Boby","photoUrls":[],"tags":[{"id":1,"name":"perro de acompañamiento"}],"status":"available"},{"id":9222968140491042131,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1488,"category":{"id":0,"name":"AdolfStalin"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1488,"name":"string"}],"status":"available"},{"id":1588,"category":{"id":0,"name":"Adolf"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1588,"name":"string"}],"status":"available"},{"id":1410,"category":{"id":1410,"name":"dog"},"name":"test dog","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":112233,"category":{"id":30,"name":"Eq-dog"},"name":"Postman","photoUrls":["URLLink"],"tags":[{"id":10,"name":"Doberman"}],"status":"available"},{"id":22,"category":{"id":0,"name":"ууууууу"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":121212,"category":{"id":0,"name":"birdie"},"name":"cikcik","photoUrls":["string"],"tags":[{"id":0,"name":"cute"}],"status":"available"},{"id":555111222333,"category":{"id":0,"name":"string"},"name":"Jeff.Tromp72","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1234567,"category":{"id":35,"name":"caini"},"name":"Grivei update","photoUrls":[],"tags":[{"id":1,"name":"dalmatian"}],"status":"sold"},{"id":1122338504434,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":42181115,"category":{"id":8557341,"name":"ut nisi"},"name":"doggie","photoUrls":["fugiat cillum","cillum"],"tags":[{"id":67927893,"name":"et Excepteur ad"},{"id":-13431872,"name":"sint ut"}],"status":"available"},{"id":20083319,"category":{"id":62517053,"name":"non anim quis"},"name":"doggie","photoUrls":["enim Ut","ad "],"tags":[{"id":-59403361,"name":"nulla ad"},{"id":-56161569,"name":"ullamco ex"}],"status":"available"},{"id":1234321,"category":{"id":0,"name":"Cat"},"name":"Pamuk","photoUrls":["string"],"tags":[{"id":0,"name":"My cute cat"}],"status":"available"},{"id":9223372016900017280,"category":{"id":0,"name":"FISH NEMO"},"name":"NEMO FISH","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1899,"category":{"id":1,"name":"rihi"},"name":"rihi","photoUrls":["https://i.pinimg.com/736x/01/5a/3e/015a3e7509fa6f3c2a90738149163314.jpg"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":99999999999,"name":"Ghost","photoUrls":[],"tags":[],"status":"available"},{"id":1245,"category":{"id":1245,"name":"xyz"},"name":"xyz","photoUrls":["test"],"tags":[],"status":"available"},{"id":123336,"category":{"id":1,"name":"Dog"},"name":"Buddy","photoUrls":["https://ya.ru/images/search?img_url=https%3A%2F%2Fwww.kleo.ru%2Fimg%2Farticles%2F40339.jpg&lr=213&nl=1&pos=3&rpt=simage&source=morda&text=Красивые%20Собаки"],"tags":[{"id":1,"name":"friendly"}],"status":"available"},{"id":703850,"category":{"id":2020,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":78730,"category":{"id":1,"name":"Cat"},"name":"Snowwhite","photoUrls":[""],"tags":[{"id":101,"name":"Snowwhite"}],"status":"available"},{"id":78732,"category":{"id":3,"name":"Snake"},"name":"Orochimaru","photoUrls":[""],"tags":[{"id":303,"name":"Orochimaru"}],"status":"available"},{"id":175,"category":{"id":0,"name":"string"},"name":"Tommy_SADIQA01","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8979789078978969,"category":{"id":-20476978,"name":"id occaecat est"},"name":"doggie","photoUrls":["ad tempor id magna","Duis"],"tags":[{"id":895601,"name":"magna ipsum"},{"id":86688648,"name":"quis voluptate"}],"status":"available"},{"id":1422,"category":{"id":1,"name":"pox"},"name":"test dog","photoUrls":["https://i.pinimg.com/736x/01/5a/3e/015a3e7509fa6f3c2a90738149163314.jpg","https://xn--e1aflfqk.xn--80aaccp4ajwpkgbl4lpb.xn--p1ai/upload/iblock/702/0net3j4kf5kwszeiecl0jmc4ez2trrnx/%D1%81%D0%BF%D0%B0%D0%BD%D0%B8.jpg"],"tags":[],"status":"available"},{"id":141414,"category":{"id":141414,"name":"Dog"},"name":"Rex","photoUrls":["string"],"tags":[{"id":141414,"name":"buldog"}],"status":"available"},{"id":9999999,"name":"doggie","photoUrls":[],"tags":[],"status":"available"},{"id":3452,"category":{"id":1,"name":"dog"},"name":"test dog","photoUrls":[],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":124,"category":{"id":2,"name":"dog"},"name":"Lulu2","photoUrls":["no_url"],"tags":[{"id":2,"name":"chiquaqua"}],"status":"available"},{"id":1545,"name":"test dog","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":1553,"category":{"id":1,"name":"dog"},"name":"test dog","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"sold"},{"id":69745597,"category":{"id":81776001,"name":"anim incididunt"},"name":"doggie","photoUrls":["ut elit","in"],"tags":[{"id":-30941697,"name":"laborum"},{"id":-56138752,"name":"tempor incididunt"}],"status":"available"},{"id":6755,"category":{"id":1,"name":"dog"},"name":"test dog","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"pending"},{"id":1036,"name":"Bela Bardog","photoUrls":[],"tags":[],"status":"available"},{"id":3036,"name":"Bela Bardog","photoUrls":[],"tags":[],"status":"available"},{"id":83916671,"category":{"id":51830245,"name":"dog"},"name":"doggie","photoUrls":["https://cdn.pixabay.com/photo/2019/04/10/23/51/animal-4118585_1280.jpg","https://cdn.pixabay.com/photo/2015/11/17/13/13/bulldog-1047518_1280.jpg"],"tags":[],"status":"available"},{"id":1056,"name":"test dog","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":12344,"category":{"id":0,"name":"string"},"name":"Crocodile","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":2324124,"category":{"id":0,"name":"string"},"name":"Crocodile","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":88,"category":{"id":1,"name":"Cat1"},"name":"CatTest","photoUrls":["https://petstore.swagger.io/v2/pet.png"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":1285,"category":{"id":2,"name":"cat"},"name":"borya","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":557499553,"category":{"id":0,"name":"dogs"},"name":"Rob Gleason","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":114258,"category":{"id":111,"name":"cats"},"name":"Snowy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":56331470,"category":{"id":28262311,"name":"nostrud proident"},"name":"doggie","photoUrls":["sunt dolor veniam aliqua","nulla anim ex"],"tags":[{"id":21515670,"name":"voluptate in elit ani"},{"id":-36858804,"name":"proident non deserunt"}],"status":"sold"},{"id":88123,"category":{"id":88123,"name":"Cats"},"name":"Chombe","photoUrls":["string"],"tags":[{"id":88123,"name":"Penelopa"}],"status":"available"},{"id":1284,"category":{"id":2,"name":"dog"},"name":"rex2","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":613,"category":{"id":78901,"name":"stringwerttyuhgf"},"name":"Krackens","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":61302,"category":{"id":78902,"name":"string"},"name":"scooby","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854775807,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":2129,"category":{"id":1,"name":"Cat1"},"photoUrls":["https://petstore.swagger.io/v2/pet.png"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":990152470,"category":{"id":0,"name":"dogs"},"name":"dog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":112,"category":{"id":2,"name":"Tommy"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"Jacky"}],"status":"available"},{"id":112121212121,"category":{"id":2,"name":"Tommy12"},"name":"doggie1","photoUrls":["string"],"tags":[{"id":0,"name":"Jack1y"}],"status":"available"},{"id":980398324,"category":{"id":0,"name":"dogs"},"name":"monkey","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1191919,"category":{"id":1,"name":"Dogs"},"name":"string","photoUrls":["string"],"tags":[{"id":1,"name":"friendly"}],"status":"available"},{"id":392049567,"category":{"id":0,"name":"dogs"},"name":"alpaca","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":512623120,"category":{"id":0,"name":"dogs"},"name":"dog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":512623127,"category":{"id":0,"name":"dogs"},"name":"dog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1234,"category":{"id":0,"name":"rajju"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854022425,"category":{"id":0,"name":"Cute Lab Puppies"},"name":"Simba the lion","photoUrls":["https://images.app.goo.gl/TWFpB7qSfXDAzwkx9"],"tags":[{"id":0,"name":"Best friendly Breed"}],"status":"available"},{"id":91507602,"category":{"id":-95494262,"name":"sit ea"},"name":"doggie","photoUrls":["deserunt","id sint et"],"tags":[{"id":-54029842,"name":"ullamco"},{"id":13198949,"name":"id"}],"status":"sold"},{"id":435513837,"category":{"id":0,"name":"dogs"},"name":"water buffalo","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1001,"category":{"id":1002,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1003,"name":"string"}],"status":"available"},{"id":14,"category":{"id":1,"name":"lebrador"},"name":"tom","photoUrls":["string"],"tags":[{"id":1,"name":"simple"}],"status":"available"},{"id":68783552,"category":{"id":57019602,"name":"in"},"name":"doggie","photoUrls":["fugiat sunt occaecat labore Excepteur","cupidatat in"],"tags":[{"id":41094418,"name":"ut Duis"},{"id":-96713650,"name":"ut velit exercitation cillum"}],"status":"pending"},{"id":3708840,"category":{"id":9855812,"name":"Duis in commodo"},"name":"doggie","photoUrls":["minim id in sit","est esse culpa nisi"],"tags":[{"id":-89808508,"name":"sit"},{"id":-5238278,"name":"dolor in"}],"status":"sold"},{"id":344,"category":{"id":0,"name":"string"},"name":"Doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":25,"category":{"id":0,"name":"string"},"name":"kitty","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":785812752,"category":{"id":0,"name":"dogs"},"name":"ape","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":5797,"name":"New name750","photoUrls":[],"tags":[],"status":"sold"},{"id":500,"category":{"id":0,"name":"lab"},"name":"doggie","photoUrls":["string"],"tags":[{"id":2500,"name":"lab"}],"status":"available"},{"id":847387630760,"category":{"id":0,"name":"string"},"name":"Mathilde","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":867,"category":{"id":0,"name":"Samsung"},"name":"Tiger","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":24093935,"category":{"id":-6714225,"name":"do magna"},"name":"doggie","photoUrls":["aute","velit"],"tags":[{"id":71561130,"name":"deserunt ut occaecat"},{"id":-1195842,"name":"nulla nostrud occaeca"}],"status":"sold"},{"id":159,"category":{"id":0,"name":"Trixie"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":3411,"name":"New name153","photoUrls":[],"tags":[],"status":"sold"},{"id":325,"category":{"id":0,"name":"string"},"name":"nik","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":105,"category":{"id":1,"name":"dog"},"name":"test Bob","photoUrls":["https://petstore.swagger.io/pet.png","https://petstore.swagger.io/pet2.png"],"tags":[{"id":1,"name":"tag1"},{"id":2,"name":"tag2"}],"status":"available"},{"id":812397145,"category":{"id":0,"name":"dogs"},"name":"cheetah","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8270,"name":"New name539","photoUrls":[],"tags":[],"status":"sold"},{"id":147,"category":{"id":0,"name":"Luna"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":2255,"category":{"id":1,"name":"dima"},"name":"doggie","photoUrls":[],"tags":[{"id":2,"name":"cat_dima"}],"status":"available"},{"id":3903023,"category":{"id":-56789506,"name":"cillum p"},"name":"doggie","photoUrls":["aliquip Excepteur","commodo dolore consequat eu"],"tags":[{"id":60937326,"name":"irure in"},{"id":20218536,"name":"sint consectetur ad voluptate"}],"status":"sold"},{"id":2256,"category":{"id":1,"name":"dima22"},"name":"doggie","photoUrls":[],"tags":[{"id":2,"name":"cat_dima22"}],"status":"available"},{"id":210,"category":{"id":0,"name":"string"},"name":"catel","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1110,"name":"New name947","photoUrls":[],"tags":[],"status":"sold"},{"id":3083,"name":"New name554","photoUrls":[],"tags":[],"status":"sold"},{"id":767,"category":{"id":4444,"name":"dog"},"name":"Simba","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":200,"category":{"id":0,"name":"string"},"name":"rex","photoUrls":["string"],"tags":[{"id":0,"name":"dog"}],"status":"available"},{"id":1,"category":{"id":1,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"available"},{"id":15,"category":{"id":15,"name":"Jerry"},"name":"Jerry","photoUrls":["https://sun9-71.userapi.com/impg/5JWpvrjfYdFwLKzWvIHH4cUH53iSE3bWcnl9eQ/1Be6V0HQbiM.jpg?size=836x1080&quality=95&sign=ee976f883d97552272170c5f900d6bcd&type=album"],"tags":[{"id":15,"name":"Cat"}],"status":"available"}]%                       
+kseniiapetrova@MacBook-Air-Kseniia Bash training % 
 
-<html>
-<head><title>404 Not Found</title></head>
-<body>
-<center><h1>404 Not Found</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
-
-kseniiapetrova@MacBook-Air-Kseniia bash_training % curl -X POST -H "Content-Type: application/json" -d '<JSON_DATA>' https://petstore.swagger.io/api/v3/user
-
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>Error 404 Not Found</title>
-</head>
-<body><h2>HTTP ERROR 404</h2>
-<p>Problem accessing /api/v3/user. Reason:
-<pre>    Not Found</pre></p><hr><i><small>Powered by Jetty://</small></i><hr/>
-
-</body>
-</html>
-kseniiapetrova@MacBook-Air-Kseniia bash_training % 
+kseniiapetrova@MacBook-Air-Kseniia ~ % curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id":90, 
+  "username": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "password": "string",
+  "phone": "string",
+  "userStatus": 0
+}'
+{"code":200,"type":"unknown","message":"90"}%  
+kseniiapetrova@MacBook-Air-Kseniia ~ % 
