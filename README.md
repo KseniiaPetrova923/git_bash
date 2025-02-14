@@ -2,12 +2,14 @@
 As part of the course, I worked with basic Bash commands: created, moved and deleted files and folders, edited content, performed searches, worked with processes and APIs. This experience helped me better understand the command line and file management in the terminal.
 
 Below is the example of my work:
+
 [bash1.txt](https://github.com/KseniiaPetrova923/git_bash/blob/main/bash1.txt)
+
 [bash2.txt](https://github.com/KseniiaPetrova923/git_bash/blob/main/bash2.txt) 
 
 ## TASK 1.
 
-| Заголовок 1 | Заголовок 2 |
+| Сommand | Main Use: |
 |------------|------------|
 | Строка 1.1 | Строка 1.2 |
 | Строка 2.1 | Строка 2.2 |
