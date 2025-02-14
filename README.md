@@ -13,7 +13,7 @@ Below is the example of my work:
 |------------|------------|
 | Строка 1.1 | Строка 1.2 |
 | Строка 2.1 | Строка 2.2 |
-pwd
+|pwd| lala|
 mkdir test1
 cd test1
 touch 1.txt
