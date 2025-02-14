@@ -49,8 +49,5 @@ Below are the examples of my work:
 |kill 666|kill process 666 in the console|
 |ping rusau.net|find out the availability of the rusau.net resource using ping|
 |ping -c 5 rusau.net|send 5 packets to rusau.net|
-
-|curl -X 'GET' 'https://petstore.swagger.io/v2/pet/findByStatus?status=available,sold,pending' -H 'accept: application/json'|using GET and the curl command, get information about registered pets with any status|
-
-             
+|curl -X 'GET' 'https://petstore.swagger.io/v2/pet/findByStatus?status=available,sold,pending' -H 'accept: application/json'|using GET and the curl command, get information about registered pets with any status|             
 |curl -X 'POST' \'https://petstore.swagger.io/v2/user' \ -H 'accept: application/json' \-H 'Content-Type: application/json' \-d '{"id":97, "username": "string","firstName": "string","lastName": "string","email": "string","password": "string","phone": "string","userStatus": 0}'|using POST and curl command create a new user|
