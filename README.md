@@ -13,21 +13,20 @@ Below is the example of my work:
 |------------|------------|
 | Строка 1.1 | Строка 1.2 |
 | Строка 2.1 | Строка 2.2 |
-|pwd| lala|
-mkdir test1
-cd test1
-touch 1.txt
-touch 2.txt
-touch 3.txt
-ls
-cd ..
-mkdir test2
-rmdir test2
-rm test1/2.txt
-mkdir test3
+|pwd|determine the name of the folder you are in|
+|mkdir test1|create a directory inside this folder called test1|
+|cd test1|go to test1 folder|
+|touch 1.txt 2.txt 3.txt|create file 1,2 and 3 inside test1 directory|
+|ls|check the contents of the test1 directory|
+|cd ..|go to home directory|
+|mkdir test2|create a folder test2 inside a home directory|
+|rmdir test2|delete a folder test2|
+|rm test1/2.txt|delete file 2 from test1 folder|
+|mkdir test3
 cd test3
 touch 4.txt
-touch 5.txt
+touch 5.txt|create a folder in a home directory test3 and add two files|
+
 cd .. 
 rm -r test3
 mkdir test4
