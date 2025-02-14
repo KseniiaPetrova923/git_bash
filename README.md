@@ -37,27 +37,20 @@ Below are the examples of my work:
 |cd|go to home directory|
 |mkdir test3|create a folder test3 inside a home directory|
 |cd test3; echo -e "row1\nrow2\nrow3\nrow4" > 4.txt; echo -e "row1\nrow2\nrow3\nrow4" > 5.txt; echo -e "row1\nrow2\nrow3\nrow4" > 6.txt|create file 4,5 and 6 inside test3 directory,each of which should have 4 lines row1, row2, row3, row4|
+|grep "row2" 5.txt|find row2 in file 5|
+|cd ..; grep -r "row" test3|find the line row in the test3 folder|
+|cd test3 ;grep -c "row" 6.txt|count how many lines with the content row in file 6|
+|find 5.txt|find file 5 inside test3 folder|
+|cd ..find test3 -name "5.txt" -exec rm {} \;|find and delete a file 5 within a directory test3| 
+|cd test3 ;echo "test" >> 4.txt|using the echo command, add the word test to file 4|
+|sed -i '' -e 's/test/fail/' 4.txt|replace the word "test" in file 4 with "fail"|
+|echo -e "test\n$(cat 4.txt)" > 4.txt|add the word "test" to file 4 so that the contents are preserved|
+|ps aux|view all processes for users that occur in the system|
+|kill 666|kill process 666 in the console|
+|ping rusau.net|find out the availability of the rusau.net resource using ping|
+|ping -c 5 rusau.net|send 5 packets to rusau.net|
 
-
-|grep "row2" 5.txt|
-
-|cd ..|
-|grep -r "row" test3|
-|cd test3|
-|grep -c "row" 6.txt|
-|find 5.txt|
-|cd ..|
-|find test3 -name "5.txt" -exec rm {} \;|
-|cd test3|
-|echo "test" >> 4.txt|
-|sed -i '' -e 's/test/fail/' 4.txt|
-|echo -e "test\n$(cat 4.txt)" > 4.txt|
-|ps aux|
-|kill 666|
-|ping rusau.net|
-|ping -c 5 rusau.net|
-
-|curl -X 'GET' 'https://petstore.swagger.io/v2/pet/findByStatus?status=available,sold,pending' -H 'accept: application/json'|
+|curl -X 'GET' 'https://petstore.swagger.io/v2/pet/findByStatus?status=available,sold,pending' -H 'accept: application/json'|using GET and the curl command, get information about registered pets with any status|
 
              
-|curl -X 'POST' \'https://petstore.swagger.io/v2/user' \ -H 'accept: application/json' \-H 'Content-Type: application/json' \-d '{"id":97, "username": "string","firstName": "string","lastName": "string","email": "string","password": "string","phone": "string","userStatus": 0}'|
+|curl -X 'POST' \'https://petstore.swagger.io/v2/user' \ -H 'accept: application/json' \-H 'Content-Type: application/json' \-d '{"id":97, "username": "string","firstName": "string","lastName": "string","email": "string","password": "string","phone": "string","userStatus": 0}'|using POST and curl command create a new user|
